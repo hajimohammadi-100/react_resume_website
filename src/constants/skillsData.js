@@ -64,7 +64,7 @@ export const skills = [
         skillNum: "82"
     },
     {
-        skill:"Restful API",
+        skill:"RestfulAPI",
         skillNum: "80"
     },
     {

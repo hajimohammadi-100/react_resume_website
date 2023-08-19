@@ -1,58 +1,3 @@
-/* avatar */
-
-.avatar {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-flow: column;
-    width: 100%;
-}
-
-.avatarImage {
-    width: 410px !important;
-    height: 440px !important;
-    object-fit: cover;
-    display: block;
-}
-
-.avatarImage::before {
-    content: " ";
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border-radius: 100%;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, 10%);
-    z-index: -1;
-    animation: rotation 60s infinite linear;
-}
-
-@keyframes rotation {
-    from {
-        transform: translate(-50%, 10%) rotate(0deg);
-    }
-
-    to {
-        transform: translate(-50%, 10%) rotate(359deg);
-    }
-}
-
-.avatarText {
-    font-size: 120px !important;
-    font-weight: bolder !important;
-    position: absolute;
-    white-space: nowrap;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, 25.5%);
-    background: -webkit-linear-gradient(90deg, #3c58e3 -15%, #a5b9fa 58%, #5ab5e2 97%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 /* Boxs */
 
 .homeContent {
@@ -536,24 +481,6 @@
     .avatarInfoTextCaption {
         font-size: 13px !important;
     }
-
-    /* avatar */
-
-    .avatarImage {
-        width: 380px !important;
-        height: 410px !important;
-    }
-
-    .avatarImage::before {
-        width: 375px;
-        height: 375px;
-        transform: translate(-50%, 10%);
-    }
-
-    .avatarText {
-        font-size: 109px !important;
-        transform: translate(-50%, 25.7%);
-    }
 }
 
 @media screen and (max-width: 950px) {
@@ -670,23 +597,6 @@
 
     .avatarInfoTextCaption {
         font-size: 12px !important;
-    }
-
-    /* avatar */
-
-    .avatarImage {
-        width: 370px !important;
-        height: 400px !important;
-    }
-
-    .avatarImage::before {
-        width: 370px;
-        height: 370px;
-    }
-
-    .avatarText {
-        font-size: 96px !important;
-        transform: translate(-50%, 26.1%);
     }
 }
 
@@ -1038,23 +948,6 @@
         height: 235px;
         margin: 20px 0px;
     }
-
-    /* avatar */
-
-    .avatarImage {
-        width: 310px !important;
-        height: 330px !important;
-    }
-
-    .avatarImage::before {
-        width: 300px;
-        height: 300px;
-    }
-
-    .avatarText {
-        font-size: 68px !important;
-        transform: translate(-50%, 26.1%);
-    }
 }
 
 @media screen and (max-width: 550px) {
@@ -1165,23 +1058,6 @@
 
     .avatarInfoTextCaption {
         font-size: 14px !important;
-    }
-
-    /* avatar */
-
-    .avatarImage {
-        width: 280px !important;
-        height: 300px !important;
-    }
-
-    .avatarImage::before {
-        width: 280px;
-        height: 280px;
-    }
-
-    .avatarText {
-        font-size: 58px !important;
-        transform: translate(-50%, 26.1%);
     }
 }
 
@@ -1374,23 +1250,6 @@
         margin: auto !important;
         width: 300px;
     }
-
-    /* avatar */
-
-    .avatarImage {
-        width: 220px !important;
-        height: 240px !important;
-    }
-
-    .avatarImage::before {
-        width: 220px;
-        height: 220px;
-    }
-
-    .avatarText {
-        font-size: 44px !important;
-        transform: translate(-50%, 25.99%);
-    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1412,20 +1271,5 @@
     .ContactBoxContentTitle{
         font-size: 35px !important;
         line-height: 55px !important;
-    }
-
-    /* .avatarImage {
-        width: 250px !important;
-        height: 250px !important;
-    }
-
-    .avatarImage::before {
-        width: 205px;
-        height: 205px;
-    } */
-
-    .avatarText {
-        font-size: 40px !important;
-        transform: translate(-50%, 28.3%);
     }
 }
