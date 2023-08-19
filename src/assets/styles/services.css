@@ -1,0 +1,509 @@
+/* services */
+.services {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: -40px;
+}
+
+.ServiceDescription {
+    width: 68%;
+    min-height: 600px;
+    border-radius: 20px;
+}
+
+.ServiceCaption {
+    flex-flow: column;
+    width: 30.5%;
+    min-height: 600px;
+    border-radius: 20px;
+}
+
+/* ServiceDescription */
+.ServiceDescriptionItems{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.serviceDescriptionItem{
+    width: 49%;
+    height: 275px;
+    border-radius: 20px;
+}
+
+.serviceMargin{
+    margin-bottom: 15px;
+}
+
+.serviceDescriptionItemTitle{
+    padding: 10px 10px 5px;
+}
+
+.serviceDescriptionItemTitle svg{
+    width: 45px;
+}
+
+.serviceDescriptionItemTitle p{
+    font-size: 18px !important;
+    letter-spacing: 0.4px;
+    font-weight: bold !important;
+}
+
+.serviceDescriptionItemText{
+    padding: 0px 10px 10px;
+    font-size: 17px !important;
+    letter-spacing: 0.2px;
+    line-height: 30px !important;
+    text-align: justify;
+}
+
+
+/* ServiceCaption */
+.serviceItem {
+    display: flex;
+    width: 178px;
+    align-items: center;
+    margin: 36px;
+}
+
+.serviceItem svg {
+    width: 50px;
+}
+
+.serviceItem p {
+    font-size: 21px !important;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1200px) {
+    .services {
+        margin-top: 70px;
+        margin-bottom: -40px;
+    }
+    
+    .ServiceDescription {
+        width: 68%;
+        min-height: 600px;
+    }
+    
+    .ServiceCaption {
+        width: 30.5%;
+        min-height: 600px;
+    }
+    
+    /* ServiceDescription */
+    .ServiceDescriptionItems{
+        padding: 15px;
+    }
+    
+    .serviceDescriptionItem{
+        width: 49%;
+        height: 275px;
+    }
+    
+    .serviceMargin{
+        margin-bottom: 15px;
+    }
+    
+    .serviceDescriptionItemTitle svg{
+        width: 42px;
+    }
+    
+    .serviceDescriptionItemTitle p{
+        font-size: 17px !important;
+    }
+    
+    .serviceDescriptionItemText{
+        padding: 5px 10px 10px;
+        font-size: 15px !important;
+        line-height: 26px !important;
+    }
+    
+    
+    /* ServiceCaption */
+    .serviceItem {
+        width: 178px;
+        margin: 38px;
+    }
+    
+    .serviceItem svg {
+        width: 47px;
+    }
+    
+    .serviceItem p {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .services {
+        margin-top: 60px;
+        margin-bottom: -40px;
+    }
+    
+    .ServiceDescription {
+        width: 67%;
+        min-height: 509px;
+    }
+    
+    .ServiceCaption {
+        width: 31.5%;
+        min-height: 509px;
+    }
+    
+    /* ServiceDescription */
+    .ServiceDescriptionItems{
+        padding: 10px;
+    }
+    
+    .serviceDescriptionItem{
+        width: 49%;
+        height: 237px;
+    }
+    
+    .serviceMargin{
+        margin-bottom: 10px;
+    }
+    
+    .serviceDescriptionItemTitle svg{
+        width: 40px;
+    }
+    
+    .serviceDescriptionItemTitle p{
+        font-size: 16px !important;
+    }
+    
+    .serviceDescriptionItemText{
+        padding: 5px 10px 10px;
+        font-size: 14px !important;
+        line-height: 21px !important;
+    }
+    
+    
+    /* ServiceCaption */
+    .serviceItem {
+        width: 160px;
+        margin: 32px;
+    }
+    
+    .serviceItem svg {
+        width: 42px;
+    }
+    
+    .serviceItem p {
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .services {
+        margin-top: 56px;
+        margin-bottom: -40px;
+    }
+    
+    .ServiceDescription {
+        width: 66.5%;
+        min-height: 455px;
+    }
+    
+    .ServiceCaption {
+        width: 32%;
+        min-height: 455px;
+    }
+    
+    /* ServiceDescription */
+    .ServiceDescriptionItems{
+        padding: 10px;
+    }
+    
+    .serviceDescriptionItem{
+        width: 49%;
+        height: 210px;
+    }
+    
+    .serviceMargin{
+        margin-bottom: 10px;
+    }
+    
+    .serviceDescriptionItemTitle{
+        padding: 7px 7px 3px;
+    }
+    
+    .serviceDescriptionItemTitle svg{
+        width: 37px;
+    }
+    
+    .serviceDescriptionItemTitle p{
+        font-size: 15px !important;
+    }
+    
+    .serviceDescriptionItemText{
+        padding: 4px 7px 7px;
+        font-size: 11.5px !important;
+        line-height: 21px !important;
+    }
+    
+    
+    /* ServiceCaption */
+    .serviceItem {
+        width: 147px;
+        margin: 30px;
+    }
+    
+    .serviceItem svg {
+        width: 39px;
+    }
+    
+    .serviceItem p {
+        font-size: 17px !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .services {
+        margin-top: 50px;
+        margin-bottom: -38px;
+    }
+    
+    .ServiceDescription {
+        width: 66.5%;
+        min-height: 385px;
+    }
+    
+    .ServiceCaption {
+        width: 32%;
+        min-height: 385px;
+    }
+    
+    /* ServiceDescription */
+    .ServiceDescriptionItems{
+        padding: 7px;
+    }
+    
+    .serviceDescriptionItem{
+        width: 49%;
+        height: 180px;
+        border-radius: 15px;
+    }
+    
+    .serviceMargin{
+        margin-bottom: 7px;
+    }
+
+    .serviceDescriptionItemTitle svg{
+        width: 35px;
+    }
+    
+    .serviceDescriptionItemTitle p{
+        font-size: 15px !important;
+    }
+    
+    .serviceDescriptionItemText{
+        padding: 0px 7px 7px;
+        font-size: 10.5px !important;
+        line-height: 17px !important;
+        letter-spacing: 0px;
+    }
+    
+    
+    /* ServiceCaption */
+    .serviceItem {
+        width: 140px;
+        margin: 23px;
+    }
+    
+    .serviceItem svg {
+        width: 36px;
+    }
+    
+    .serviceItem p {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .services {
+        margin-top: 50px;
+        margin-bottom: -30px;
+    }
+    
+    .ServiceDescription {
+        width: 100%;
+    }
+    
+    .ServiceCaption {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* ServiceDescription */
+    .ServiceDescriptionItems{
+        padding: 13px;
+    }
+    
+    .serviceDescriptionItem{
+        width: 48.8%;
+        height: 230px;
+        border-radius: 15px;
+    }
+    
+    .serviceMargin{
+        margin-bottom: 11px;
+    }
+    
+    .serviceDescriptionItemTitle{
+        padding: 11px 11px 4px;
+    }
+    
+    .serviceDescriptionItemTitle svg{
+        width: 39px;
+    }
+    
+    .serviceDescriptionItemTitle p{
+        font-size: 17px !important;
+    }
+    
+    .serviceDescriptionItemText{
+        padding: 3px 11px 11px;
+        font-size: 13px !important;
+        line-height: 21px !important;
+        letter-spacing: 0.4px;
+    }
+    
+    
+    /* ServiceCaption */
+    .serviceItem {
+        width: 150px;
+        margin: 30px;
+    }
+    
+    .serviceItem svg {
+        width: 41px;
+    }
+    
+    .serviceItem p {
+        font-size: 19px !important;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .services {
+        margin-top: 50px;
+        margin-bottom: -32px;
+    }
+    
+    .ServiceCaption {
+        margin-bottom: 18px;
+    }
+    
+    /* ServiceDescription */
+    .ServiceDescriptionItems{
+        padding: 12px 12px 0px;
+    }
+    
+    .serviceDescriptionItem{
+        width: 100%;
+        height: 230px;
+        border-radius: 15px;
+        margin-bottom: 12px !important;
+    }
+    
+    .serviceMargin{
+        margin-bottom: 0px;
+    }
+    
+    .serviceDescriptionItemTitle{
+        padding: 11px 11px 4px;
+    }
+    
+    .serviceDescriptionItemTitle svg{
+        width: 39px;
+    }
+    
+    .serviceDescriptionItemTitle p{
+        font-size: 17px !important;
+    }
+    
+    .serviceDescriptionItemText{
+        padding: 3px 11px 11px;
+        font-size: 15px !important;
+        line-height: 28px !important;
+        letter-spacing: 0.4px;
+    }
+    
+    
+    /* ServiceCaption */
+    .serviceItem {
+        width: 150px;
+        margin: 30px;
+    }
+    
+    .serviceItem svg {
+        width: 41px;
+    }
+    
+    .serviceItem p {
+        font-size: 19px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* ServiceDescription */
+    .serviceDescriptionItemText{
+        padding: 3px 11px 11px;
+        font-size: 13px !important;
+        line-height: 25px !important;
+        letter-spacing: 0.4px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .services {
+        margin-top: 45px;
+    }
+
+    /* ServiceDescription */
+    .ServiceDescriptionItems{
+        padding: 12px 10px 0px;
+    }
+    
+    .serviceDescriptionItem{
+        height: 240px;
+        border-radius: 15px;
+        margin-bottom: 12px !important;
+    }
+    
+    .serviceDescriptionItemTitle{
+        padding: 10px 10px 6px;
+    }
+    
+    .serviceDescriptionItemTitle svg{
+        width: 39px;
+    }
+    
+    .serviceDescriptionItemTitle p{
+        font-size: 17px !important;
+    }
+    
+    .serviceDescriptionItemText{
+        padding: 3px 10px 10px;
+        font-size: 13px !important;
+        line-height: 23px !important;
+        letter-spacing: 0.2px;
+    }
+    
+    
+    /* ServiceCaption */
+    .serviceItem {
+        width: 147px;
+        margin: 26px;
+    }
+    
+    .serviceItem svg {
+        width: 40px;
+    }
+    
+    .serviceItem p {
+        font-size: 18px !important;
+    }
+}

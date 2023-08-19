@@ -1,0 +1,907 @@
+/* about content */
+.aboutText {
+    position: relative;
+    width: 70%;
+    min-height: 400px;
+    border-radius: 20px;
+    align-items: start;
+    flex-flow: column;
+}
+
+.aboutInfo {
+    position: relative;
+    width: 28%;
+    min-height: 340px;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
+/*aboutText content*/
+.aboutText svg {
+    position: absolute;
+    top: 0px;
+    width: 35px;
+}
+
+.aboutTextTitle {
+    padding: 25px 15px 15px;
+    font-size: 25px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1.5px;
+}
+
+.aboutTextCaption {
+    padding: 25px 15px 0;
+    text-align: justify;
+    line-height: 30px !important;
+    letter-spacing: 0.2px;
+    font-size: 17px !important;
+}
+
+.downloadButton {
+    position: absolute;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.downloadButton p {
+    font-size: 14px !important;
+    letter-spacing: 0.4px;
+}
+
+/* aboutInfo content */
+.aboutInfoImg {
+    width: 245px !important;
+    height: 245px !important;
+    object-fit: cover !important;
+    border-radius: 20px !important;
+    margin-top: -71px !important;
+}
+
+.socialMedias {
+    width: 95%;
+}
+
+.socialMedias a {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.socialMedias a svg {
+    width: 63%;
+    height: 63%;
+}
+
+.aboutButton {
+    width: 94%;
+    height: 50px;
+    border-radius: 15px;
+}
+
+/* client Reviews */
+
+.clientReviewsTitle {
+    text-align: center;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    margin-bottom: 40px !important;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.slick-initialized .slick-slide {
+    margin: 0px !important;
+}
+
+.slick-track div div {
+    margin-right: 10px;
+    margin-left: 4px;
+}
+
+.clientReviewsConmment {
+    width: 300px;
+    height: 240px;
+    border-radius: 20px;
+}
+
+.clientReviewsConmmentHeader {
+    padding: 10px;
+    margin: 0px !important;
+}
+
+.avatarImageComment {
+    height: 65px !important;
+    width: 65px !important;
+    object-fit: cover !important;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    margin: 0px 7px 0px 0px !important;
+}
+
+.clientReviewsConmmentClientInfo p {
+    font-size: 20px !important;
+    letter-spacing: 0.2px;
+    margin-bottom: 4px;
+}
+
+.clientReviewsConmmentClientRate {
+    width: 57px;
+    margin: 0px !important;
+}
+
+.clientReviewsConmmentClientRate div{
+    margin: 0px 2px !important;
+}
+
+.clientReviewsConmmentClientRate div:first-child{
+    margin: 0px !important;
+}
+
+.clientReviewsConmmentClientRate svg {
+    width: 16px;
+}
+
+.clientReviewsConmmentText {
+    padding: 6px 10px 5px;
+    font-size: 18px !important;
+    text-align: justify;
+    letter-spacing: 0.2px;
+    line-height: 30px !important;
+}
+
+/* questions */
+.questions{
+    position: relative;    
+    margin-top: 120px;
+}
+
+.questionsContentTitle{
+    font-size: 30px !important;
+    font-weight: bold !important;
+    margin-bottom: 20px !important;
+    letter-spacing: 1px;
+}
+
+.questionsImage{
+    width: 50%;
+}
+
+.questionsImage svg{
+    width: 310px;
+}
+
+.questionsContent{
+    width: 50%;
+}
+
+.Mui-expanded{
+    opacity: 1 !important;
+}
+
+.questionTitle{
+    font-size: 20px !important;
+}
+
+.questionCaption{
+    font-size: 17px !important;
+    line-height: 29px !important;
+    letter-spacing: 0.5px;
+}
+
+.MuiAccordionSummary-expandIconWrapper svg{
+    width: 28px;
+    height: 28px;
+}
+
+.MuiPaper-root {
+    margin: 0px !important;
+    border-radius: 0px !important;
+    opacity: 0.4;
+    transition: all 0.4s;
+}
+
+.MuiAccordionSummary-expandIconWrapper {
+    position: absolute;
+}
+
+
+@media screen and (max-width: 1060px) {
+    /* questions */
+    .questions{
+        margin-top: 110px;
+    }
+
+    .questionsContentTitle{
+        font-size: 29px !important;
+        margin-bottom: 18px !important;
+    }
+
+    .questionsImage svg{
+        width: 300px;
+    }
+
+    .questionTitle{
+        font-size: 18px !important;
+    }
+
+    .questionCaption{
+        font-size: 16px !important;
+        line-height: 25px !important;
+    }
+
+    .MuiAccordionSummary-expandIconWrapper svg{
+        width: 26px;
+        height: 26px;
+    }
+
+    /* client Reviews */
+    .clientReviewsTitle {
+        font-size: 28px !important;
+        margin-bottom: 37px !important;
+    }
+
+    .clientReviewsConmment {
+        height: 240px;
+    }
+
+    .clientReviewsConmmentHeader {
+        padding: 10px;
+    }
+
+    .avatarImageComment {
+        height: 60px !important;
+        width: 60px !important;
+    }
+
+    .clientReviewsConmmentClientInfo p {
+        font-size: 18px !important;
+        margin-bottom: 2px;
+    }
+
+    .clientReviewsConmmentClientRate {
+        width: 80px;
+    }
+
+    .clientReviewsConmmentClientRate svg {
+        width: 14px;
+    }
+
+    .clientReviewsConmmentText {
+        padding: 6px 10px 5px;
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+
+    /* about content */
+    .aboutText {
+        width: 68%;
+        min-height: 400px;
+    }
+
+    .aboutInfo {
+        width: 30%;
+        min-height: 340px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    /* about content */
+    .aboutInfo {
+        width: 30%;
+        min-height: 355px;
+        margin-top: 50px;
+    }
+
+    /*aboutText content*/
+    .aboutText svg {
+        width: 30px;
+    }
+
+    .aboutTextTitle {
+        padding: 20px 15px 15px;
+        font-size: 23px !important;
+    }
+
+    .aboutTextCaption {
+        padding: 20px 15px 0;
+        line-height: 27px !important;
+        font-size: 16px !important;
+    }
+
+    .downloadButton {
+        height: 35px;
+        width: 110px;
+    }
+
+    .downloadButton p {
+        font-size: 13px !important;
+    }
+
+    /* aboutInfo content */
+    .aboutInfoImg {
+        width: 230px !important;
+        height: 230px !important;
+        margin-top: -60px !important;
+    }
+
+    .socialMedias a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .aboutButton {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    /* about content */
+    .aboutText {
+        width: 65%;
+        min-height: 400px;
+    }
+
+    .aboutInfo {
+        width: 33%;
+        min-height: 355px;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    /* questions */
+    .questions{
+        margin-top: 100px;
+    }
+
+    .questionsImage{
+        width: 45%;
+    }
+    
+    .questionsContent{
+        width: 55%;
+    }
+
+    .questionsContentTitle{
+        font-size: 28px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .questionsImage svg{
+        width: 280px;
+    }
+
+    .questionTitle{
+        font-size: 17px !important;
+    }
+
+    .questionCaption{
+        font-size: 15px !important;
+        line-height: 23px !important;
+    }
+
+    .MuiAccordionSummary-expandIconWrapper svg{
+        width: 26px;
+        height: 26px;
+    }
+
+    /* client Reviews */
+    .clientReviewsTitle {
+        font-size: 26px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .clientReviewsConmment {
+        height: 230px;
+    }
+
+    .clientReviewsConmmentHeader {
+        padding: 10px;
+    }
+
+    .avatarImageComment {
+        height: 65px !important;
+        width: 65px !important;
+    }
+
+    .clientReviewsConmmentClientInfo p {
+        font-size: 20px !important;
+        margin-bottom: 4px;
+    }
+
+    .clientReviewsConmmentClientRate {
+        width: 87px;
+    }
+
+    .clientReviewsConmmentClientRate svg {
+        width: 15px;
+    }
+
+    .clientReviewsConmmentText {
+        padding: 6px 10px 5px;
+        font-size: 17px !important;
+        line-height: 24px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /* about content */
+    .aboutText {
+        width: 65%;
+        min-height: 370px;
+    }
+
+    .aboutInfo {
+        width: 33%;
+        min-height: 330px;
+        margin-top: 40px;
+    }
+
+    /*aboutText content*/
+    .aboutText svg {
+        width: 30px;
+    }
+
+    .aboutTextTitle {
+        padding: 20px 15px 15px;
+        font-size: 23px !important;
+    }
+
+    .aboutTextCaption {
+        padding: 20px 15px 0;
+        line-height: 26px !important;
+        font-size: 15px !important;
+    }
+
+    .downloadButton {
+        height: 35px;
+        width: 110px;
+    }
+
+    .downloadButton p {
+        font-size: 13px !important;
+    }
+
+    /* aboutInfo content */
+    .aboutInfoImg {
+        width: 205px !important;
+        height: 205px !important;
+        margin-top: -54px !important;
+    }
+
+    .socialMedias a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .aboutButton {
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    /* questions */
+    .questions{
+        margin-top: 100px;
+    }
+
+    .questionsImage{
+        position: absolute;
+        text-align: center !important;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        z-index: 0;
+        opacity: 0.3;
+    }
+    
+    .questionsContent{
+        width: 100%;
+        z-index: 1;
+    }
+
+    .questionsContentTitle{
+        font-size: 32px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .questionsImage svg{
+        width: 230px;
+    }
+
+    .questionTitle{
+        font-size: 20px !important;
+    }
+
+    .questionCaption{
+        font-size: 18px !important;
+        line-height: 28px !important;
+    }
+
+    .MuiAccordionSummary-expandIconWrapper svg{
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* about content */
+    .aboutText {
+        width: 100%;
+        min-height: 420px;
+    }
+
+    .aboutInfo {
+        width: 100%;
+        min-height: 450px;
+        margin-top: 150px;
+        margin-bottom: 20px;
+    }
+
+    /*aboutText content*/
+    .aboutText svg {
+        width: 37px;
+    }
+
+    .aboutTextTitle {
+        padding: 25px 15px 15px;
+        font-size: 26px !important;
+    }
+
+    .aboutTextCaption {
+        padding: 25px 15px 0;
+        line-height: 29px !important;
+        font-size: 17px !important;
+    }
+
+    .downloadButton {
+        height: 40px;
+        width: 120px;
+    }
+
+    .downloadButton p {
+        font-size: 14px !important;
+    }
+
+    /* aboutInfo content */
+    .aboutInfoImg {
+        width: 405px !important;
+        height: 405px !important;
+        margin-top: -104px !important;
+    }
+
+    .socialMedias {
+        justify-content: center;
+    }
+
+    .socialMedias a {
+        width: 65px;
+        height: 65px;
+        margin: 30px 10px;
+    }
+
+    .aboutButton {
+        height: 60px;
+        font-size: 20px !important;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    /* client Reviews */
+    .clientReviewsTitle {
+        font-size: 28px !important;
+        margin-bottom: 37px !important;
+    }
+
+    .clientReviewsConmment {
+        height: 230px;
+    }
+
+    .clientReviewsConmmentHeader {
+        padding: 10px;
+    }
+
+    .avatarImageComment {
+        height: 60px !important;
+        width: 60px !important;
+    }
+
+    .clientReviewsConmmentClientInfo p {
+        font-size: 18px !important;
+        margin-bottom: 2px;
+    }
+
+    .clientReviewsConmmentClientRate {
+        width: 80px;
+    }
+
+    .clientReviewsConmmentClientRate svg {
+        width: 14px;
+    }
+
+    .clientReviewsConmmentText {
+        padding: 6px 10px 5px;
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    /* client Reviews */
+    .clientReviewsTitle {
+        font-size: 25px !important;
+        margin-bottom: 35px !important;
+    }
+
+    .clientReviewsConmment {
+        height: 220px;
+    }
+
+    .clientReviewsConmmentText {
+        padding: 6px 10px 5px;
+        font-size: 18px !important;
+        line-height: 29px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* questions */
+    .questions{
+        margin-top: 90px;
+    }
+    
+    .questionsContentTitle{
+        font-size: 29px !important;
+        margin-bottom: 18px !important;
+    }
+
+    .questionsImage svg{
+        width: 220px;
+    }
+
+    .questionTitle{
+        font-size: 18px !important;
+    }
+
+    .questionCaption{
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+
+    .MuiAccordionSummary-expandIconWrapper svg{
+        width: 28px;
+        height: 28px;
+    }
+
+    /* about content */
+    .aboutText {
+        width: 100%;
+        min-height: 420px;
+    }
+
+    .aboutInfo {
+        width: 100%;
+        min-height: 450px;
+        margin-bottom: 20px;
+    }
+
+    /*aboutText content*/
+    .aboutText svg {
+        width: 34px;
+    }
+
+    .aboutTextTitle {
+        padding: 23px 15px 15px;
+        font-size: 24px !important;
+    }
+
+    .aboutTextCaption {
+        padding: 23px 15px 0;
+        line-height: 26px !important;
+        font-size: 16px !important;
+    }
+
+    .downloadButton {
+        height: 40px;
+        width: 120px;
+    }
+
+    .downloadButton p {
+        font-size: 13px !important;
+    }
+
+    /* aboutInfo content */
+    .aboutInfoImg {
+        width: 350px !important;
+        height: 350px !important;
+        margin-top: -104px !important;
+    }
+
+    .socialMedias {
+        justify-content: center;
+    }
+
+    .socialMedias a {
+        width: 60px;
+        height: 60px;
+        margin: 20px 7px;
+    }
+
+    .aboutButton {
+        height: 55px;
+        font-size: 19px !important;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    /* client Reviews */
+    .clientReviewsConmmentText {
+        padding: 6px 10px 5px;
+        font-size: 17px !important;
+        line-height: 25px !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    /* about content */
+    .aboutText {
+        min-height: 450px;
+    }
+
+    .aboutInfo {
+        min-height: 400px;
+        margin-bottom: 20px;
+    }
+
+    /*aboutText content*/
+    .aboutText svg {
+        width: 32px;
+    }
+
+    .aboutTextTitle {
+        padding: 20px 15px 15px;
+        font-size: 22px !important;
+    }
+
+    .aboutTextCaption {
+        padding: 20px 15px 0;
+        line-height: 28px !important;
+        font-size: 15px !important;
+    }
+
+    .downloadButton {
+        height: 40px;
+        width: 120px;
+    }
+
+    .downloadButton p {
+        font-size: 13px !important;
+    }
+
+    /* aboutInfo content */
+    .aboutInfoImg {
+        width: 310px !important;
+        height: 310px !important;
+        margin-top: -104px !important;
+    }
+
+    .socialMedias a {
+        width: 60px;
+        height: 60px;
+        margin: 20px 7px;
+    }
+
+    .aboutButton {
+        height: 55px;
+        font-size: 18px !important;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* questions */
+    .questions{
+        margin-top: 80px;
+    }
+    
+    .questionsContentTitle{
+        font-size: 27px !important;
+        margin-bottom: 17px !important;
+    }
+
+    .questionsImage svg{
+        width: 190px;
+    }
+
+    .questionTitle{
+        font-size: 16px !important;
+    }
+
+    .questionCaption{
+        font-size: 15px !important;
+        line-height: 20px !important;
+    }
+
+    .MuiAccordionSummary-expandIconWrapper svg{
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    /* client Reviews */
+    .clientReviewsConmmentText {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+
+    /* about content */
+    .aboutText {
+        min-height: 450px;
+    }
+
+    .aboutInfo {
+        min-height: 340px;
+        margin-top: 132px;
+        margin-bottom: 20px;
+    }
+
+    /*aboutText content*/
+    .aboutText svg {
+        width: 30px;
+    }
+
+    .aboutTextTitle {
+        padding: 20px 15px 15px;
+        font-size: 20px !important;
+    }
+
+    .aboutTextCaption {
+        padding: 20px 15px 0;
+        line-height: 25px !important;
+        font-size: 14px !important;
+    }
+
+    .downloadButton {
+        height: 36px;
+        width: 110px;
+    }
+
+    .downloadButton p {
+        font-size: 12px !important;
+    }
+
+    /* aboutInfo content */
+    .aboutInfoImg {
+        width: 270px !important;
+        height: 270px !important;
+        margin-top: -104px !important;
+    }
+
+    .socialMedias a {
+        width: 50px;
+        height: 50px;
+        margin: 10px 6px;
+    }
+
+    .aboutButton {
+        height: 50px;
+        font-size: 16px !important;
+        margin-bottom: 0px;
+    }
+}

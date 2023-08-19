@@ -1,0 +1,199 @@
+.pageTitle {
+    position: relative;
+    flex-flow: column;
+    text-align: center;
+}
+
+.pageTitleText {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-weight: bolder !important;
+    letter-spacing: 0.4px;
+    font-size: 24px !important;
+}
+
+.pageSubTitleText {
+    font-weight: bolder !important;
+    letter-spacing: 0px;
+    font-size: 130px !important;
+    color: #ffffff0d;
+}
+
+.letterSpacingRtl{
+    letter-spacing: 10px;
+}
+
+.progressbar {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 90px;
+    height: 5px;
+    background:
+        linear-gradient(90deg, #053d49 -15%, #41264e 58%, #4e191c 97%) padding-box,
+        linear-gradient(90deg, #12C2E9 -15%, #C471ED 58%, #F64F59 97%) border-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.progressbar::before {
+    content: " ";
+    display: block;
+    background: linear-gradient(90deg, #3c58e3 -15%, #7a95ec 58%, #5ab5e2 97%);
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    animation: moveItem 6s infinite linear;
+}
+
+@keyframes moveItem {
+    0% {
+        transform: translateX(0px);
+    }
+    
+    50% {
+        transform: translateX(84.9px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .pageTitleText {
+        font-size: 22px !important;
+    }
+
+    .pageSubTitleText {
+        font-size: 110px !important;
+    }
+
+    .letterSpacingRtl{
+        letter-spacing: 9px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .pageTitleText {
+        font-size: 21px !important;
+    }
+
+    .pageSubTitleText {
+        font-size: 100px !important;
+    }
+
+    .progressbar {
+        top: 42px;
+    }
+    
+    .letterSpacingRtl{
+        letter-spacing: 8px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .pageTitleText {
+        font-size: 20px !important;
+    }
+
+    .pageSubTitleText {
+        font-size: 90px !important;
+    }
+
+    .progressbar {
+        top: 40px;
+    }
+   
+    .letterSpacingRtl{
+        letter-spacing: 7px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .pageTitleText {
+        font-size: 19px !important;
+    }
+
+    .pageSubTitleText {
+        font-size: 80px !important;
+    }
+
+    .progressbar {
+        top: 34px;
+        width: 70px;
+        height: 4px;
+    }
+
+    .progressbar::before {
+        width: 4px;
+        height: 4px;
+    }
+
+    @keyframes moveItem {
+        0% {
+            transform: translateX(0px);
+        }
+        
+        50% {
+            transform: translateX(65.9px);
+        }
+    
+        100% {
+            transform: translateX(0px);
+        }
+    }
+   
+    .letterSpacingRtl{
+        letter-spacing: 6px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .pageTitleText {
+        font-size: 18px !important;
+    }
+
+    .pageSubTitleText {
+        font-size: 70px !important;
+    }
+
+    .progressbar {
+        top: 33px;
+    }
+   
+    .letterSpacingRtl{
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .pageTitleText {
+        font-size: 17px !important;
+    }
+    
+    .pageSubTitleText {
+        font-size: 63px !important;
+    }
+
+    .progressbar {
+        top: 29px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .pageTitleText {
+        font-size: 17px !important;
+    }
+    
+    .pageSubTitleText {
+        font-size: 56px !important;
+    }
+
+    .progressbar {
+        top: 32px;
+    }
+}

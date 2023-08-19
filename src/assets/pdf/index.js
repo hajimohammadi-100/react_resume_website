@@ -1,0 +1,1 @@
+export { default as ResumePdf } from "./resumePdf.pdf";

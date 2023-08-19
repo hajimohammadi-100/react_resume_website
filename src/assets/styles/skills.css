@@ -1,0 +1,239 @@
+.skills {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: -48px;
+}
+
+.skill{
+    flex-flow: column;
+    margin: 8px 0px;
+    padding: 47px 0px 15px;
+    width: 24%;
+    border-radius: 20px;
+}
+
+.pie {
+    position: relative;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    border: 0 !important;
+}
+
+.pieBackground {
+    position: absolute;
+    width: calc(179px - 30px);
+    height: calc(179px - 30px);
+    border-radius: 50%;
+}
+
+.skillTitle {
+    position: absolute;
+    text-align: center;
+    white-space: pre-wrap;
+    font-size: 19px !important;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.4px;
+}
+
+.skillNumber {
+    position: absolute;
+    font-size: 25px !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1050px) {
+    .skills {
+        margin-top: 70px;
+        margin-bottom: -45px;
+    }
+    
+    .skill{
+        margin: 8px 0px;
+        padding: 45px 0px 15px;
+        width: 23.7%;
+    }
+    
+    .pie {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .pieBackground {
+        width: calc(175px - 30px);
+        height: calc(175px - 30px);
+    }
+    
+    .skillTitle {
+        font-size: 18px !important;
+        top: -23px;
+    }
+    
+    .skillNumber {
+        font-size: 24px !important;
+    }    
+}
+
+@media screen and (max-width: 950px) {
+    .skills {
+        margin-top: 70px;
+        margin-bottom: -45px;
+    }
+    
+    .skill{
+        margin: 7px 0px;
+        padding: 50px 0px 18px;
+        width: 32%;
+    }
+    
+    .pie {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .pieBackground {
+        width: calc(183px - 30px);
+        height: calc(183px - 30px);
+    }
+    
+    .skillTitle {
+        font-size: 20px !important;
+        top: -26px;
+    }
+    
+    .skillNumber {
+        font-size: 25px !important;
+    }    
+}
+
+@media screen and (max-width: 750px) {
+    .skills {
+        margin-top: 70px;
+        margin-bottom: -45px;
+    }
+    
+    .skill{
+        margin: 7px 0px;
+        padding: 50px 0px 18px;
+        width: 31.7%;
+    }
+    
+    .pie {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .pieBackground {
+        width: calc(175px - 30px);
+        height: calc(175px - 30px);
+    }
+    
+    .skillTitle {
+        font-size: 18px !important;
+        top: -23px;
+    }
+    
+    .skillNumber {
+        font-size: 24px !important;
+    }    
+}
+
+@media screen and (max-width: 650px) {
+    .skills {
+        margin-top: 60px;
+        margin-bottom: -38px;
+    }
+    
+    .skill{
+        margin: 7px 0px;
+        padding: 50px 0px 18px;
+        width: 48.5%;
+    }
+    
+    .pie {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .pieBackground {
+        width: calc(183px - 30px);
+        height: calc(183px - 30px);
+    }
+    
+    .skillTitle {
+        font-size: 20px !important;
+        top: -26px;
+    }
+    
+    .skillNumber {
+        font-size: 25px !important;
+    }   
+}
+
+@media screen and (max-width: 520px) {
+    .skills {
+        margin-top: 60px;
+        margin-bottom: -38px;
+    }
+    
+    .skill{
+        margin: 6px 0px;
+        padding: 50px 0px 18px;
+        width: 48.5%;
+    }
+    
+    .pie {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .pieBackground {
+        width: calc(175px - 30px);
+        height: calc(175px - 30px);
+    }
+    
+    .skillTitle {
+        font-size: 18px !important;
+        top: -23px;
+    }
+    
+    .skillNumber {
+        font-size: 24px !important;
+    }    
+}
+
+@media screen and (max-width: 450px) {
+    .skills {
+        margin-top: 50px;
+        margin-bottom: -38px;
+    }
+    
+    .skill{
+        margin: 10px 0px;
+        padding: 60px 0px 18px;
+        width: 100%;
+    }
+    
+    .pie {
+        width: 175px;
+        height: 175px;
+    }
+    
+    .pieBackground {
+        width: calc(187px - 30px);
+        height: calc(187px - 30px);
+    }
+    
+    .skillTitle {
+        font-size: 24px !important;
+        top: -31px;
+    }
+    
+    .skillNumber {
+        font-size: 26px !important;
+    }      
+}

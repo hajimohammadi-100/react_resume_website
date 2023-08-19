@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto-Light.woff') format('woff'),
+        url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sahel';
+    src: url('../fonts/Sahel.eot');
+    src: url('../fonts/Sahel.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Sahel.woff2') format('woff2'),
+        url('../fonts/Sahel.woff') format('woff'),
+        url('../fonts/Sahel.ttf') format('truetype');
+    font-weight: normal;
+}
+
+* {
+    font-family: 'Sahel', 'Roboto';
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: rgba(15, 15, 15, 1) !important;
+}
+
+body::-webkit-scrollbar {
+    background: rgb(26, 26, 26);
+    height: 5px;
+    width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(239, 239, 239, 1);
+    border-radius: 8px;
+}
+
+fieldset {
+    border-color: transparent !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* animations */
+.showBoxStatic {
+    animation-name: showBoxStatic;
+    animation-duration: 1.5s;
+}
+
+@keyframes showBoxStatic {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.showBoxStatic2 {
+    animation-name: showBoxStatic2;
+    animation-duration: 2.5s;
+}
+
+@keyframes showBoxStatic2 {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.box {
+    transform: translateY(16%);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.box.showBox {
+    opacity: 1;
+    transform: translateX(0%);
+}

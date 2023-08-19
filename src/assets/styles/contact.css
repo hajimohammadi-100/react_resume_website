@@ -1,0 +1,460 @@
+.contactContent{
+    margin: 100px 0px 80px;
+    align-items: start !important;
+}
+
+.contactInfo{
+    align-items: start !important;
+    border-radius: 20px;
+    width: 29%;
+    min-height: 500px;
+}
+
+.contactBox{
+    position: relative;
+    border-radius: 20px;
+    width: 69%;
+    min-height: 500px;
+}
+
+/* contactBox */
+
+.contactBoxTitle{
+    font-size: 40px !important;
+    line-height: 80px !important;
+    padding: 10px 15px 5px;
+}
+
+.contactBoxTitle span{
+    background: -webkit-linear-gradient(90deg,#12C2E9 -15%,#C471ED 58%,#F64F59 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.ContactFromIcon{
+    position: absolute;
+    top: 0;
+}
+
+.ContactFromIcon svg{
+    width: 37px;
+}
+
+form{
+    width: 96%;
+    margin: auto;
+}
+
+.css-13swrpw-MuiInputBase-root-MuiFilledInput-root,
+.css-1yjxizd-MuiInputBase-root-MuiFilledInput-root,
+.css-11is38i-MuiInputBase-root-MuiFilledInput-root,
+.css-1obnjvm-MuiInputBase-root-MuiFilledInput-root {
+    background-color: transparent !important
+}
+
+.MuiFormLabel-root,.css-1qjkqnl-MuiFormLabel-root-MuiInputLabel-root.Mui-error,
+.css-b3t34p-MuiFormLabel-root-MuiInputLabel-root.Mui-error {
+    letter-spacing: 0.4px
+}
+
+/* contactInfo */
+.contactInfoTitle{
+    font-size: 20px !important;
+    width: 100%;
+}
+
+.contactInfoItem{
+    width: 100%;
+}
+
+.contactInfoIcon{
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+.contactInfoIcon svg{
+    width: 70%;
+    height: 70%;
+}
+
+.contactInfoText{
+    margin: 0px 5px;
+}
+
+.contactInfoText p:nth-child(1){
+    font-size: 15px !important;
+    margin-bottom: 2px;
+}
+
+.contactInfoText p:nth-child(2){
+    font-size: 17px !important;
+    margin-bottom: 3px;
+}
+
+.contactIcons a{
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    border-radius: 100%;
+}
+
+.contactIcons svg{
+    width: 60%;
+    height: 60%;
+}
+
+@media screen and (max-width: 1250px) {
+    .contactContent{
+        margin: 90px 0px 80px;
+    }
+    
+    .contactInfo{
+        width: 31%;
+        min-height: 500px;
+    }
+    
+    .contactBox{
+        width: 68%;
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .contactContent{
+        margin: 90px 0px 80px;
+    }
+    
+    .contactInfo{
+        width: 33%;
+        min-height: 500px;
+    }
+    
+    .contactBox{
+        width: 66%;
+        min-height: 500px;
+    }
+
+    /* contactBox */
+    
+    .contactBoxTitle{
+        font-size: 35px !important;
+        line-height: 70px !important;
+        padding: 10px 15px 5px;
+    }
+    
+    form{
+        width: 96%;
+    }
+
+    /* contactInfo */
+    .contactInfoTitle{
+        font-size: 19px !important;
+    }
+ 
+    .contactInfoIcon{
+        width: 55px;
+        height: 55px;
+    }
+    
+    .contactInfoText{
+        margin: 0px 4px;
+    }
+    
+    .contactInfoText p:nth-child(1){
+        font-size: 14px !important;
+        margin-bottom: 2px;
+    }
+    
+    .contactInfoText p:nth-child(2){
+        font-size: 16px !important;
+        margin-bottom: 2px;
+    }
+    
+    .contactIcons a{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contactContent{
+        margin: 80px 0px 100px;
+    }
+    
+    .contactInfo{
+        width: 100%;
+        margin-top: 50px;
+        min-height: 500px;
+    }
+    
+    .contactBox{
+        width: 100%;
+        min-height: 500px;
+    }
+
+    /* contactBox */
+    
+    .contactBoxTitle{
+        font-size: 43px !important;
+        line-height: 80px !important;
+        padding: 10px 15px 5px;
+    }
+    
+    form{
+        width: 96%;
+    }
+
+    /* contactInfo */
+    .contactInfoTitle{
+        font-size: 25px !important;
+        text-align: center;
+        margin: 25px 0px !important;
+    }
+
+    .contactInfoItem {
+        justify-content: center;
+        text-align: center;
+        flex-flow: column;
+        margin-bottom: 30px;
+    }
+ 
+    .contactInfoIcon{
+        width: 90px;
+        height: 90px;
+    }
+    
+    .contactInfoText{
+        margin: 0px;
+    }
+    
+    .contactInfoText p:nth-child(1){
+        font-size: 21px !important;
+        margin-bottom: 6px;
+        margin-top: 7px;
+    }
+    
+    .contactInfoText p:nth-child(2){
+        font-size: 24px !important;
+        margin-bottom: 0px;
+    }
+    
+    .contactIcons{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contactIcons a{
+        width: 65px;
+        height: 65px;
+        margin: 0px 7px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contactContent{
+        margin: 70px 0px 100px;
+    }
+    
+    .contactInfo{
+        margin-top: 25px;
+        min-height: 300px;
+    }
+    
+    .contactBox{
+        min-height: 300px;
+    }
+
+    /* contactBox */
+    
+    .contactBoxTitle{
+        font-size: 38px !important;
+        line-height: 70px !important;
+        padding: 10px 10px 5px;
+    }
+
+    .ContactFromIcon svg{
+        width: 34px;
+    }
+
+    /* contactInfo */
+    .contactInfoTitle{
+        font-size: 23px !important;
+        margin: 18px 0px !important;
+    }
+
+    .contactInfoItem {
+        margin-bottom: 25px;
+    }
+    
+    .contactInfoText p:nth-child(1){
+        font-size: 20px !important;
+        margin-bottom: 6px;
+        margin-top: 7px;
+    }
+    
+    .contactInfoText p:nth-child(2){
+        font-size: 23px !important;
+        margin-bottom: 0px;
+    }
+
+    .contactIcons a{
+        width: 60px;
+        height: 60px;
+        margin: 0px 7px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contactContent{
+        margin: 65px 0px 90px;
+    }
+    
+    .contactInfo{
+        margin-top: 20px;
+    }
+    
+    /* contactBox */
+    
+    .contactBoxTitle{
+        font-size: 32px !important;
+        line-height: 55px !important;
+        padding: 15px 9px 10px;
+    }
+
+    .ContactFromIcon svg{
+        width: 32px;
+    }
+
+    /* contactInfo */
+    .contactInfoTitle{
+        font-size: 21px !important;
+        margin: 17px 0px !important;
+    }
+
+    .contactInfoItem {
+        margin-bottom: 22px;
+    }
+    
+    .contactInfoText p:nth-child(1){
+        font-size: 18px !important;
+        margin-bottom: 3px;
+        margin-top: 7px;
+    }
+    
+    .contactInfoText p:nth-child(2){
+        font-size: 21px !important;
+        margin-bottom: 0px;
+    }
+
+    .contactIcons a{
+        width: 50px;
+        height: 50px;
+        margin: 0px 7px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .contactContent{
+        margin: 60px 0px 80px;
+    }
+    
+    .contactInfo{
+        margin-top: 15px;
+    }
+    
+    /* contactBox */
+    
+    .contactBoxTitle{
+        font-size: 28px !important;
+        line-height: 48px !important;
+        padding: 15px 8px;
+    }
+
+    .ContactFromIcon svg{
+        width: 30px;
+    }
+
+    /* contactInfo */
+    .contactInfoTitle{
+        font-size: 20px !important;
+        margin: 16px 0px !important;
+    }
+
+    .contactInfoItem {
+        margin-bottom: 22px;
+    }
+    
+    .contactInfoText p:nth-child(1){
+        font-size: 16px !important;
+        margin-bottom: 1px;
+        margin-top: 7px;
+    }
+    
+    .contactInfoText p:nth-child(2){
+        font-size: 18px !important;
+        margin-bottom: 0px;
+    }
+
+    .contactIcons a{
+        width: 50px;
+        height: 50px;
+        margin: 0px 7px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .contactContent{
+        margin: 60px 0px 70px;
+    }
+    
+    .contactInfo{
+        margin-top: 15px;
+    }
+    
+    /* contactBox */
+    
+    .contactBoxTitle{
+        font-size: 25px !important;
+        line-height: 48px !important;
+        padding: 10px 8px 10px;
+    }
+
+    .ContactFromIcon svg{
+        width: 29px;
+    }
+
+    /* contactInfo */
+    .contactInfoTitle{
+        font-size: 20px !important;
+        margin: 18px 0px !important;
+    }
+
+    .contactInfoItem {
+        margin-bottom: 20px;
+    }
+    
+    .contactInfoText p:nth-child(1){
+        font-size: 15px !important;
+        margin-bottom: 3px;
+        margin-top: 7px;
+    }
+    
+    .contactInfoText p:nth-child(2){
+        font-size: 16px !important;
+        margin-bottom: 0px;
+    }
+
+    .contactIcons a{
+        width: 45px;
+        height: 45px;
+        margin: 0px 7px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .ContactFromIcon svg{
+        width: 27px;
+    }
+}

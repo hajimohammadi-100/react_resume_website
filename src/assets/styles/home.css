@@ -1,0 +1,1431 @@
+/* avatar */
+
+.avatar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    width: 100%;
+}
+
+.avatarImage {
+    width: 410px !important;
+    height: 440px !important;
+    object-fit: cover;
+    display: block;
+}
+
+.avatarImage::before {
+    content: " ";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    z-index: -1;
+    animation: rotation 60s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: translate(-50%, 10%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, 10%) rotate(359deg);
+    }
+}
+
+.avatarText {
+    font-size: 120px !important;
+    font-weight: bolder !important;
+    position: absolute;
+    white-space: nowrap;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 25.5%);
+    background: -webkit-linear-gradient(90deg, #3c58e3 -15%, #a5b9fa 58%, #5ab5e2 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Boxs */
+
+.homeContent {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.Box_Big {
+    position: relative;
+    width: 49%;
+    height: auto;
+    min-height: 290px;
+    border-radius: 20px;
+    border: 1px solid;
+    margin-bottom: 15px;
+}
+
+.Box_default {
+    position: relative;
+    width: 24%;
+    min-height: 290px;
+    border-radius: 20px;
+    border: 1px solid;
+    margin-bottom: 15px;
+}
+
+/* Box_default Content */
+
+.Box_default:hover .Box_info svg,
+.Box_Big:hover .Box_info svg {
+    animation: moveIcon 1s forwards;
+}
+
+@keyframes moveIcon {
+    from {
+        transform: translateX(0px);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateX(6px);
+        opacity: 1;
+    }
+}
+
+.Box_default .Box_info svg,
+.Box_Big .Box_info svg {
+    animation: backIcon 0.5s forwards;
+}
+
+@keyframes backIcon {
+    from {
+        transform: translateX(6px);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 0.5;
+    }
+}
+
+.Box_default a,
+.Box_Big a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.Box_img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.Box_info {
+    width: 100%;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+}
+
+.Box_info svg {
+    transform: translateX(0px);
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+}
+
+.Box_subTitle {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+.Box_title {
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1.3px;
+}
+
+/*Contact Box*/
+
+.ContactBoxContent{
+    position: absolute;
+    bottom: 5%;
+    align-items: end;
+    width: 92% !important;
+}
+
+.ContactBoxContent svg{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.ContactIcon{
+    position: absolute;
+    top: 0px;
+    width: 38px;
+}
+
+.ContactIcon svg{
+    width: 100%;
+}
+
+.ContactBoxContentTitle{
+    font-size: 60px !important;
+    line-height: 80px !important;
+}
+
+.ContactBoxContentTitle span{
+    background: -webkit-linear-gradient(90deg,#12C2E9 -15%,#C471ED 58%,#F64F59 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* services box */
+
+.BoxIcons {
+    height: 200px;
+    width: 95%;
+}
+
+.BoxIcons svg {
+    width: 75px;
+}
+
+/* skills box img */
+
+.skills_img{
+    width: 170px;
+}
+
+/* CounterBox */
+
+.CounterBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 250px;
+    width: 28%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.CounterBoxNum{
+    font-size: 50px !important;
+    font-weight: bold !important;
+    direction: ltr !important;
+}
+
+.CounterBoxTitle{
+    font-weight: bold !important;
+    margin-top: 30px !important;
+    font-size: 18px !important;
+}
+
+/* avatarInfo content */
+
+.avatarInfo {
+    flex-flow: nowrap !important;
+}
+
+.avatarInfoImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.avatarInfoImage img {
+    border-radius: 19px 0px 19px 0px !important;
+}
+
+.avatarInfoText {
+    width: 250px;
+}
+
+.avatarInfoTextSubtitle {
+    font-size: 15px !important;
+    font-weight: bolder !important;
+}
+
+.avatarInfoTextTitle {
+    font-size: 25px !important;
+    font-weight: bold !important;
+    letter-spacing: 2px;
+    margin: 10px 0px !important;
+}
+
+.avatarInfoTextCaption {
+    font-size: 15px !important;
+}
+
+/* contact box */
+.backgroundIcons{
+    width: 90%;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.backgroundIcons :nth-child(4){
+    display: none;
+} 
+
+.backgroundIcons div{
+    width: 80px;
+    height: 80px;
+    border-radius: 220px;
+}
+
+.backgroundIcons div svg{
+    width: 70%;
+    height: 70%;
+}
+
+@media screen and (max-width: 1300px) {
+    /*Contact Box*/
+
+    .ContactBoxContent{
+        bottom: 5%;
+        width: 94% !important;
+    }
+
+    .ContactBoxContent svg{
+        width: 45px;
+        margin-bottom: 10px;
+    }
+
+    .ContactIcon{
+        width: 33px;
+    }
+
+    .ContactBoxContentTitle{
+        font-size: 50px !important;
+        line-height: 70px !important;
+    }
+    
+    /* CounterBox */
+
+    .CounterBox{
+        width: 28% !important;
+        min-height: 240px;
+    }
+
+    .CounterBoxNum{
+        font-size: 45px !important;
+    }
+
+    .CounterBoxTitle{
+        margin-top: 32px !important;
+        font-size: 17px !important;
+    }
+
+    /* Boxs */
+    .homeContent {
+        margin-top: 55px;
+    }
+
+    .Box_Big,
+    .Box_default {
+        min-height: 270px;
+        margin-bottom: 15px;
+    }
+
+    .Box_img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .BoxIcons{
+        height: 180px;
+    }
+
+    .BoxIcons svg {
+        width: 70px;
+    }
+
+    .skills_img{
+        width: 160px;
+    }
+
+    .Box_info {
+        padding: 0px 14px;
+        margin-bottom: 14px;
+    }
+
+    .Box_subTitle {
+        font-size: 13px !important;
+    }
+
+    .Box_title {
+        font-size: 23px !important;
+    }
+
+    /* avatarInfo content */
+    .avatarInfoImage {
+        width: 220px;
+        height: 220px;
+
+    }
+
+    .avatarInfoText {
+        width: 220px;
+    }
+
+    .avatarInfoTextSubtitle {
+        font-size: 14px !important;
+    }
+
+    .avatarInfoTextTitle {
+        font-size: 21px !important;
+        margin: 10px 0px !important;
+    }
+
+    .avatarInfoTextCaption {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Box_Big,
+    .Box_default {
+        min-height: 250px;
+    }
+
+    /* CounterBox */
+
+    .CounterBox{
+        width: 28% !important;
+        min-height: 220px;
+    }
+
+    .CounterBoxNum{
+        font-size: 41px !important;
+    }
+
+    .CounterBoxTitle{
+        margin-top: 32px !important;
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    /*Contact Box*/
+
+    .ContactBoxContent{
+        bottom: 3%;
+        width: 94% !important;
+    }
+
+    .ContactBoxContent svg{
+        width: 45px;
+        margin-bottom: 10px;
+    }
+
+    .ContactIcon{
+        width: 28px;
+    }
+
+    .ContactBoxContentTitle{
+        font-size: 47px !important;
+        line-height: 60px !important;
+    }
+    
+    /* CounterBox */
+
+    .CounterBox{
+        width: 27% !important;
+        min-height: 190px;
+    }
+
+    .CounterBoxNum{
+        font-size: 39px !important;
+    }
+
+    .CounterBoxTitle{
+        margin-top: 20px !important;
+        font-size: 15px !important;
+    }
+
+    /* contact box */
+    .backgroundIcons{
+        height: 110px;
+    }
+
+    .backgroundIcons div{
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Boxs */
+    .homeContent {
+        margin-top: 55px;
+    }
+
+    .Box_Big,
+    .Box_default {
+        min-height: 233px;
+        margin-bottom: 15px;
+    }
+
+    .Box_img {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 0px;
+    }
+
+    .BoxIcons{
+        height: 160px;
+    }
+    
+    .BoxIcons svg {
+        width: 60px;
+    }
+
+    .skills_img{
+        width: 145px;
+    }
+
+    .Box_info {
+        padding: 0px 13px;
+        margin-bottom: 13px;
+    }
+
+    .Box_subTitle {
+        font-size: 11px !important;
+    }
+
+    .Box_title {
+        font-size: 20px !important;
+    }
+
+    /* avatarInfo content */
+    .avatarInfoImage {
+        width: 180px;
+        height: 180px;
+
+    }
+
+    .avatarInfoText {
+        width: 200px;
+    }
+
+    .avatarInfoTextSubtitle {
+        font-size: 12px !important;
+    }
+
+    .avatarInfoTextTitle {
+        font-size: 19px !important;
+        margin: 10px 0px !important;
+    }
+
+    .avatarInfoTextCaption {
+        font-size: 13px !important;
+    }
+
+    /* avatar */
+
+    .avatarImage {
+        width: 380px !important;
+        height: 410px !important;
+    }
+
+    .avatarImage::before {
+        width: 375px;
+        height: 375px;
+        transform: translate(-50%, 10%);
+    }
+
+    .avatarText {
+        font-size: 109px !important;
+        transform: translate(-50%, 25.7%);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    /*Contact Box*/
+
+    .ContactBoxContent{
+        bottom: 2%;
+        width: 94% !important;
+    }
+
+    .ContactBoxContent svg{
+        width: 41px;
+        margin-bottom: 10px;
+    }
+
+    .ContactIcon{
+        width: 28px;
+    }
+
+    .ContactBoxContentTitle{
+        font-size: 44px !important;
+        line-height: 58px !important;
+    }
+
+    /* CounterBox */
+
+    .CounterBox{
+        width: 27% !important;
+        min-height: 170px;
+    }
+
+    .CounterBoxNum{
+        font-size: 35px !important;
+    }
+
+    .CounterBoxTitle{
+        margin-top: 24px !important;
+        font-size: 14px !important;
+    }
+
+    /* contact box */
+    .backgroundIcons{
+        height: 90px;
+    }
+
+    .backgroundIcons div{
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Boxs */
+    .homeContent {
+        margin-top: 50px;
+    }
+
+    .Box_Big,
+    .Box_default {
+        min-height: 210px;
+        margin-bottom: 12px;
+    }
+
+    .Box_img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .BoxIcons{
+        height: 140px;
+    }
+
+    .BoxIcons svg {
+        width: 51px;
+    }
+
+    .skills_img{
+        width: 125px;
+    }
+
+    .Box_info {
+        padding: 0px 11px;
+        margin-bottom: 11px;
+    }
+
+    .Box_info svg {
+        width: 38px;
+    }
+
+    .Box_subTitle {
+        font-size: 10px !important;
+    }
+
+    .Box_title {
+        font-size: 18px !important;
+    }
+
+    /* avatarInfo content */
+    .avatarInfoImage {
+        width: 160px;
+        height: 160px;
+    }
+
+    .avatarInfoText {
+        width: 190px;
+    }
+
+    .avatarInfoTextSubtitle {
+        font-size: 11px !important;
+    }
+
+    .avatarInfoTextTitle {
+        font-size: 18px !important;
+        margin: 8px 0px !important;
+    }
+
+    .avatarInfoTextCaption {
+        font-size: 12px !important;
+    }
+
+    /* avatar */
+
+    .avatarImage {
+        width: 370px !important;
+        height: 400px !important;
+    }
+
+    .avatarImage::before {
+        width: 370px;
+        height: 370px;
+    }
+
+    .avatarText {
+        font-size: 96px !important;
+        transform: translate(-50%, 26.1%);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /*Contact Box*/
+
+    .ContactBoxContent{
+        bottom: 3%;
+        width: 94% !important;
+    }
+
+    .ContactBoxContent svg{
+        width: 41px;
+        margin-bottom: 10px;
+    }
+
+    .ContactIcon{
+        width: 24px;
+    }
+
+    .ContactBoxContentTitle{
+        font-size: 38px !important;
+        line-height: 48px !important;
+    }
+
+    /* CounterBox */
+
+    .CounterBox{
+        width: 28% !important;
+        min-height: 150px;
+    }
+
+    .CounterBoxNum{
+        font-size: 32px !important;
+    }
+
+    .CounterBoxTitle{
+        margin-top: 20px !important;
+        font-size: 13px !important;
+    }
+
+    /* Boxs */
+    .homeContent {
+        margin-top: 50px;
+    }
+
+    .Box_Big,
+    .Box_default {
+        min-height: 193px;
+        margin-bottom: 12px;
+    }
+
+    .Box_img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .BoxIcons{
+        height: 125px;
+    }
+    
+    .BoxIcons svg {
+        width: 44px;
+    }
+
+    .skills_img{
+        width: 105px;
+    }
+
+    .Box_info {
+        padding: 0px 10px;
+        margin-bottom: 10px;
+    }
+
+    .Box_info svg {
+        width: 32px;
+    }
+
+    .Box_subTitle {
+        font-size: 9px !important;
+    }
+
+    .Box_title {
+        font-size: 16px !important;
+    }
+
+    /* avatarInfo content */
+    .avatarInfoImage {
+        width: 145px;
+        height: 145px;
+    }
+
+    .avatarInfoText {
+        width: 160px;
+    }
+
+    .avatarInfoTextSubtitle {
+        font-size: 9px !important;
+    }
+
+    .avatarInfoTextTitle {
+        font-size: 14.5px !important;
+        margin: 8px 0px !important;
+    }
+
+    .avatarInfoTextCaption {
+        font-size: 11px !important;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    /*Contact Box*/
+
+    .BoxContact{
+        height: 250px;
+    }
+
+    .ContactBoxContent{
+        bottom: 3%;
+        width: 96% !important;
+    }
+
+    .ContactBoxContent svg{
+        margin-bottom: 10px;
+    }
+
+    .ContactIcon{
+        width: 34px;
+    }
+
+    .ContactBoxContentTitle{
+        font-size: 55px !important;
+        line-height: 70px !important;
+    }
+
+    /* CounterBox */
+
+    .CounterBox{
+        width: 28% !important;
+        min-height: 240px;
+        margin: 17px 0px;
+    }
+
+    .CounterBoxNum{
+        font-size: 47px !important;
+    }
+
+    .CounterBoxTitle{
+        margin-top: 40px !important;
+        font-size: 17px !important;
+    }
+
+    /* contact box */
+    .backgroundIcons{
+        height: 100px;
+    }
+
+    .backgroundIcons :nth-child(4){
+        display: flex !important;
+    }
+
+    .backgroundIcons div{
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Boxs */
+    .homeContent {
+        margin-top: 50px;
+    }
+
+    .Box_Big {
+        width: 100%;
+    }
+
+    .Box_default {
+        width: 49%;
+    }
+
+    .Box_Big{
+        min-height: 210px;
+    }
+
+    .Box_default {
+        min-height: 190px;
+        margin-bottom: 12px;
+    }
+
+    .Box_img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .BoxIcons{
+        height: 130px;
+    }
+
+    .BoxIcons svg {
+        width: 57px;
+    }
+
+    .skills_img{
+        width: 115px;
+    }
+
+    .Box_info {
+        padding: 0px 13px;
+        margin-bottom: 13px;
+    }
+
+    .Box_info svg {
+        width: 35px;
+    }
+
+    .Box_subTitle {
+        font-size: 11px !important;
+    }
+
+    .Box_title {
+        font-size: 17px !important;
+    }
+
+    /* avatarInfo content */
+    .avatarInfoImage {
+        width: 270px;
+        height: 270px;
+        margin: 20px 0px;
+    }
+
+    .avatarInfoText {
+        width: 250px;
+    }
+
+    .avatarInfoTextSubtitle {
+        font-size: 14px !important;
+    }
+
+    .avatarInfoTextTitle {
+        font-size: 22px !important;
+        margin: 10px 0px !important;
+    }
+
+    .avatarInfoTextCaption {
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /*Contact Box*/
+
+    .BoxContact{
+        height: 220px;
+    }
+
+    .ContactBoxContent{
+        bottom: 2%;
+        width: 94% !important;
+    }
+
+    .ContactBoxContent svg{
+        margin-bottom: 10px;
+    }
+
+    .ContactIcon{
+        width: 32px;
+    }
+
+    .ContactBoxContentTitle{
+        font-size: 54px !important;
+        line-height: 70px !important;
+    }
+
+    /* CounterBox */
+
+    .CounterBox{
+        width: 29% !important;
+        min-height: 240px;
+        margin: 12px 0px;
+    }
+
+    /* contact box */
+    .backgroundIcons{
+        height: 130px;
+        width: 95%;
+    }
+
+    .backgroundIcons div{
+        width: 70px;
+        height: 70px;
+        display: flex;
+    }
+
+    /* Boxs */
+    .homeContent {
+        margin-top: 50px;
+    }
+
+    .Box_Big {
+        width: 100%;
+    }
+
+    .Box_default {
+        width: 100%;
+    }
+
+    .Box_Big,
+    .Box_default {
+        min-height: 250px;
+        margin-bottom: 18px;
+    }
+
+    .Box_img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .BoxIcons{
+        height: 190px;
+    }
+
+    .BoxIcons svg {
+        width: 67px;
+    }
+
+    .skills_img{
+        width: 175px;
+    }
+
+    .Box_info {
+        padding: 0px 17px;
+        margin-bottom: 17px;
+    }
+
+    .Box_info svg {
+        width: 45px;
+    }
+
+    .Box_subTitle {
+        font-size: 12px !important;
+    }
+
+    .Box_title {
+        font-size: 21px !important;
+    }
+
+    /* avatarInfo content */
+    .avatarInfoImage {
+        width: 235px;
+        height: 235px;
+        margin: 20px 0px;
+    }
+
+    /* avatar */
+
+    .avatarImage {
+        width: 310px !important;
+        height: 330px !important;
+    }
+
+    .avatarImage::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .avatarText {
+        font-size: 68px !important;
+        transform: translate(-50%, 26.1%);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    /*Contact Box*/
+
+    .BoxContact{
+        height: 220px;
+    }
+
+    .ContactBoxContent{
+        bottom: 0%;
+        width: 94% !important;
+    }
+
+    .ContactBoxContent svg{
+        margin-bottom: 10px;
+    }
+
+    .ContactIcon{
+        width: 30px;
+    }
+
+    .ContactBoxContentTitle{
+        font-size: 50px !important;
+        line-height: 65px !important;
+    }
+
+    /* CounterBox */
+
+    .CounterBox{
+        width: 29% !important;
+        min-height: 210px;
+        margin: 12px 0px;
+    }
+
+    .CounterBoxNum{
+        font-size: 43px !important;
+    }
+
+    .CounterBoxTitle{
+        margin-top: 30px !important;
+        font-size: 17px !important;
+    }
+
+    /* Boxs */
+    .homeContent {
+        margin-top: 50px;
+    }
+
+    .Box_Big,
+    .Box_default {
+        min-height: 220px;
+        margin-bottom: 18px;
+    }
+
+    .Box_img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .BoxIcons{
+        height: 155px;
+    }
+    
+    .BoxIcons svg {
+        width: 56px;
+    }
+
+    .skills_img{
+        width: 130px;
+    }
+
+    .Box_info {
+        padding: 0px 12px;
+        margin-bottom: 12px;
+    }
+
+    .Box_info svg {
+        width: 45px;
+    }
+
+    .Box_subTitle {
+        font-size: 11px !important;
+    }
+
+    .Box_title {
+        font-size: 20px !important;
+    }
+
+    /* avatarInfo content */
+    .avatarInfoImage {
+        width: 180px;
+        height: 180px;
+    }
+
+    .avatarInfoText {
+        width: 220px;
+    }
+
+    .avatarInfoTextSubtitle {
+        font-size: 13px !important;
+    }
+
+    .avatarInfoTextTitle {
+        font-size: 18px !important;
+        margin: 9px 0px !important;
+    }
+
+    .avatarInfoTextCaption {
+        font-size: 14px !important;
+    }
+
+    /* avatar */
+
+    .avatarImage {
+        width: 280px !important;
+        height: 300px !important;
+    }
+
+    .avatarImage::before {
+        width: 280px;
+        height: 280px;
+    }
+
+    .avatarText {
+        font-size: 58px !important;
+        transform: translate(-50%, 26.1%);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    /* CounterBox */
+    .Counter{
+        flex-flow: row wrap;
+    }
+    
+    .CounterBox{
+        width: 95% !important;
+        min-height: 210px;
+        margin: 8px 0px;
+    }
+
+    .CounterBoxNum{
+        font-size: 50px !important;
+    }
+
+    .CounterBoxTitle{
+        margin-top: 25px !important;
+        font-size: 20px !important;
+    }
+
+    /* contact box */
+    .backgroundIcons{
+        height: 110px;
+    }
+
+    .backgroundIcons div{
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Boxs */
+    .homeContent {
+        margin-top: 50px;
+    }
+
+    .Box_Big,
+    .Box_default {
+        min-height: 230px;
+        margin-bottom: 18px;
+    }
+
+    .avatarInfo {
+        flex-flow: row wrap !important;
+    }
+
+    .Box_img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .BoxIcons{
+        height: 155px;
+    }
+        
+    .BoxIcons svg {
+        width: 51px;
+    }
+
+    .skills_img{
+        width: 120px;
+    }
+
+    .Box_info {
+        padding: 0px 12px;
+        margin-bottom: 12px;
+    }
+
+    .Box_info svg {
+        width: 45px;
+    }
+
+    .Box_subTitle {
+        font-size: 11px !important;
+    }
+
+    .Box_title {
+        font-size: 20px !important;
+    }
+
+    /* avatarInfo content */
+    .avatarInfoImage {
+        width: 245px;
+        height: 245px;
+        margin: 20px 0 0;
+    }
+
+    .avatarInfoText {
+        width: 100%;
+        padding: 20px 8px;
+        text-align: center;
+    }
+
+    .avatarInfoTextSubtitle {
+        font-size: 14px !important;
+    }
+
+    .avatarInfoTextTitle {
+        font-size: 20px !important;
+        margin: 9px auto !important;
+        width: 260px;
+        line-height: 30px !important;
+    }
+
+    .avatarInfoTextCaption {
+        font-size: 15px !important;
+        margin: auto !important;
+        width: 300px;
+    }
+
+    /*Contact Box*/
+
+    .ContactBoxContent{
+        bottom: 3%;
+        width: 94% !important;
+    }
+
+    .ContactBoxContent svg{
+        margin-bottom: 10px;
+    }
+
+    .ContactIcon{
+        width: 34px;
+    }
+
+    .ContactBoxContentTitle{
+        font-size: 43px !important;
+        line-height: 60px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*Contact Box*/
+
+    .ContactBoxContent{
+        bottom: 4%;
+        width: 94% !important;
+    }
+
+    .ContactBoxContent svg{
+        margin-bottom: 10px;
+    }
+
+    .ContactIcon{
+        width: 32px;
+    }
+
+    .ContactBoxContentTitle{
+        font-size: 41px !important;
+        line-height: 55px !important;
+    }
+
+    /* contact box */
+    .backgroundIcons{
+        height: 100px;
+    }
+
+    .backgroundIcons div{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .BoxIcons svg {
+        width: 47px;
+    }
+
+    /* avatarInfo content */
+    .avatarInfoImage {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .avatarInfoTextSubtitle {
+        font-size: 12px !important;
+    }
+
+    .avatarInfoTextTitle {
+        font-size: 18px !important;
+        margin: 7px auto !important;
+        width: 260px;
+        line-height: 30px !important;
+    }
+
+    .avatarInfoTextCaption {
+        font-size: 14px !important;
+        margin: auto !important;
+        width: 300px;
+    }
+
+    /* avatar */
+
+    .avatarImage {
+        width: 220px !important;
+        height: 240px !important;
+    }
+
+    .avatarImage::before {
+        width: 220px;
+        height: 220px;
+    }
+
+    .avatarText {
+        font-size: 44px !important;
+        transform: translate(-50%, 25.99%);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    /*Contact Box*/
+
+    .ContactBoxContent{
+        bottom: 4%;
+        width: 94% !important;
+    }
+
+    .ContactBoxContent svg{
+        margin-bottom: 10px;
+    }
+
+    .ContactIcon{
+        width: 36px;
+    }
+
+    .ContactBoxContentTitle{
+        font-size: 35px !important;
+        line-height: 55px !important;
+    }
+
+    /* .avatarImage {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .avatarImage::before {
+        width: 205px;
+        height: 205px;
+    } */
+
+    .avatarText {
+        font-size: 40px !important;
+        transform: translate(-50%, 28.3%);
+    }
+}

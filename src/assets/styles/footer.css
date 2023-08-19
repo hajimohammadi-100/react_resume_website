@@ -1,0 +1,174 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.footerLogo{
+    width: 160px;
+}
+
+.footerLogo svg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footerTabs{
+    width: 100%;
+    max-width: 430px;
+    margin: 25px auto;
+}
+
+.footerTabs a{
+    font-size: 18px;
+}
+
+.footerCopyRight{
+    font-size: 20px !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        margin: 55px auto;
+    }
+    
+    .footerLogo{
+        width: 135px;
+    }
+    
+    .footerTabs{
+        max-width: 400px;
+        margin: 25px auto;
+    }
+    
+    .footerTabs a{
+        font-size: 17px;
+    }
+    
+    .footerCopyRight{
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer {
+        margin: 65px auto;
+    }
+    
+    .footerLogo{
+        width: 130px;
+    }
+    
+    .footerTabs{
+        max-width: 400px;
+        margin: 27px auto;
+    }
+    
+    .footerTabs a{
+        font-size: 18px;
+    }
+    
+    .footerCopyRight{
+        font-size: 19px !important;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    .footer {
+        margin: 65px auto;
+    }
+    
+    .footerLogo{
+        width: 125px;
+    }
+    
+    .footerTabs{
+        max-width: 400px;
+        margin: 27px auto;
+    }
+    
+    .footerTabs a{
+        font-size: 17px;
+    }
+    
+    .footerCopyRight{
+        font-size: 18px !important;
+        letter-spacing: -0.2px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        margin: 60px auto;
+    }
+    
+    .footerLogo{
+        width: 120px;
+    }
+    
+    .footerTabs{
+        max-width: 380px;
+        margin: 29px auto;
+    }
+    
+    .footerTabs a{
+        font-size: 16px;
+    }
+    
+    .footerCopyRight{
+        font-size: 17px !important;
+        letter-spacing: -0.2px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footer {
+        margin: 60px auto 40px;
+    }
+    
+    .footerLogo{
+        width: 115px;
+    }
+    
+    .footerTabs{
+        max-width: 350px;
+        margin: 24px auto;
+    }
+    
+    .footerTabs a{
+        font-size: 15px;
+    }
+    
+    .footerCopyRight{
+        font-size: 15px !important;
+        letter-spacing: -0.2px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer {
+        margin: 50px auto 40px;
+    }
+    
+    .footerLogo{
+        width: 110px;
+    }
+    
+    .footerTabs{
+        max-width: 320px;
+        margin: 24px auto;
+    }
+    
+    .footerTabs a{
+        font-size: 14px;
+    }
+    
+    .footerCopyRight{
+        font-size: 14px !important;
+        letter-spacing: -0.2px;
+    }
+}

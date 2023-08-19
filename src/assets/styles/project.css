@@ -1,0 +1,753 @@
+/* Banner */
+
+.Banner {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 650px;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.Banner::after {
+    content: "";
+    position: absolute;
+    background-color: #1A1A1A;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.BannerContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.BannerContent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.BannerTitle {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.BannerTitle :first-child {
+    font-size: 60px !important;
+    font-weight: bold !important;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.BannerTitle :last-child {
+    font-size: 14px !important;
+    font-weight: bold !important;
+    letter-spacing: 1px;
+    color: #9F9F9F;
+    white-space: nowrap;
+}
+
+/* projectInfo */
+
+.projectInfo {
+    position: relative;
+    margin-top: 547px;
+    padding-top: 45px;
+}
+
+.projectInfoIcno {
+    position: absolute;
+    width: 40px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.projectInfoDes,
+.projectInfoBox {
+    width: 500px;
+    min-height: 310px;
+    border-radius: 20px;
+    flex-flow: column;
+}
+
+.projectInfoTitles {
+    padding: 15px 14px 0px;
+    font-size: 20px !important;
+    letter-spacing: 0.3px;
+}
+
+.projectInfoDesText {
+    padding: 20px 14px 10px;
+    text-align: justify;
+    font-size: 17px !important;
+    line-height: 35px !important;
+    letter-spacing: 0.4px;
+}
+
+.projectInfoBoxItem {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.projectInfoBoxText {
+    padding: 10px 14px 0px;
+    text-align: justify;
+    font-size: 17px !important;
+    letter-spacing: 0.4px;
+}
+
+/* projectImages */
+.projectImages{
+    width: 100%;
+    height: auto;
+    margin: 60px 0px 90px;
+}
+
+.projectImages img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.projectImages div:nth-child(1){
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.projectImages div:nth-child(2),
+.projectImages div:nth-child(3),
+.projectImages div:nth-child(4){
+    width: 32%;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+/* nextProject */
+.nextProjectButton{
+    width: 240px;
+    height: 90px;
+    border-radius: 20px;
+    margin: 0px auto;
+    margin-bottom: 140px;
+    font-size: 27px;
+    letter-spacing: 0.4px;
+}
+
+.nextProjectButton a{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    /* projectImages */
+    .projectImages div:nth-child(1){
+        width: 100%;
+        height: 480px;
+        margin-bottom: 20px;
+    }
+    
+    .projectImages div:nth-child(2),
+    .projectImages div:nth-child(3),
+    .projectImages div:nth-child(4){
+        width: 32.2%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    /* projectInfo */
+    .projectInfoIcno {
+        width: 37px;
+    }
+
+    .projectInfoDes,
+    .projectInfoBox {
+        width: 460px;
+        min-height: 300px;
+    }
+
+    .projectInfoTitles {
+        padding: 14px 13px 0px;
+        font-size: 19px !important;
+    }
+
+    .projectInfoDesText {
+        padding: 20px 14px 10px;
+        font-size: 16px !important;
+        line-height: 33px !important;
+    }
+
+    .projectInfoBoxItem {
+        margin-bottom: 5px;
+    }
+
+    .projectInfoBoxText {
+        padding: 10px 14px 0px;
+        font-size: 16px !important;
+    }
+
+    /* projectImages */
+    .projectImages div:nth-child(1){
+        width: 100%;
+        height: 450px;
+    }
+    
+    .projectImages div:nth-child(2),
+    .projectImages div:nth-child(3),
+    .projectImages div:nth-child(4){
+        width: 32.2%;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 549px;
+        padding-top: 40px;
+    }
+
+    .projectInfoIcno {
+        width: 34px;
+    }
+
+    .projectInfoDes,
+    .projectInfoBox {
+        width: 400px;
+        min-height: 300px;
+    }
+
+    .projectInfoTitles {
+        padding: 12px 12px 0px;
+        font-size: 18px !important;
+    }
+
+    .projectInfoDesText {
+        padding: 17px 12px 10px;
+        font-size: 16px !important;
+        line-height: 30px !important;
+    }
+
+    .projectInfoBoxItem {
+        margin-bottom: 4px;
+    }
+
+    .projectInfoBoxText {
+        padding: 10px 12px 0px;
+        font-size: 15px !important;
+    }
+    
+    /* projectImages */
+    .projectImages div:nth-child(1){
+        width: 100%;
+        height: 420px;
+    }
+    
+    .projectImages div:nth-child(2),
+    .projectImages div:nth-child(3),
+    .projectImages div:nth-child(4){
+        width: 32.2%;
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /* Banner */
+
+    .Banner {
+        height: 485px;
+    }
+
+    .BannerTitle :first-child {
+        font-size: 54px !important;
+        margin-bottom: 3px;
+    }
+
+    .BannerTitle :last-child {
+        font-size: 13px !important;
+    }
+
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 384px;
+        padding-top: 60px;
+    }
+
+    .projectInfoIcno {
+        width: 34px;
+    }
+
+    .projectInfoDes,
+    .projectInfoBox {
+        width: 360px;
+        min-height: 310px;
+    }
+
+    .projectInfoTitles {
+        padding: 17px 13px 0px;
+        font-size: 18px !important;
+    }
+
+    .projectInfoDesText {
+        padding: 20px 13px 10px;
+        font-size: 17px !important;
+        line-height: 33px !important;
+    }
+
+    .projectInfoBoxItem {
+        margin-bottom: 5px;
+    }
+
+    .projectInfoBoxText {
+        padding: 10px 12px 0px;
+        font-size: 16px !important;
+    }
+        
+    /* projectImages */
+    .projectImages div:nth-child(1),
+    .projectImages div:nth-child(4){
+        width: 100%;
+        height: 460px;
+    }
+    
+    .projectImages div:nth-child(2),
+    .projectImages div:nth-child(3){
+        width: 49%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 384px;
+        padding-top: 60px;
+    }
+
+    .projectInfoIcno {
+        width: 34px;
+    }
+
+    .projectInfoDes,
+    .projectInfoBox {
+        width: 320px;
+        min-height: 310px;
+    }
+
+    .projectInfoTitles {
+        padding: 14px 12px 0px;
+        font-size: 17px !important;
+    }
+
+    .projectInfoDesText {
+        padding: 16px 12px 10px;
+        font-size: 16px !important;
+        line-height: 30px !important;
+    }
+
+    .projectInfoBoxItem {
+        margin-bottom: 4px;
+    }
+
+    .projectInfoBoxText {
+        padding: 10px 12px 0px;
+        font-size: 15px !important;
+    }
+
+    /* nextProject */
+    .nextProjectButton{
+        width: 220px;
+        height: 85px;
+        border-radius: 20px;
+        margin-bottom: 130px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* Banner */
+
+    .Banner {
+        height: 425px;
+    }
+
+    .BannerTitle :first-child {
+        font-size: 52px !important;
+        margin-bottom: 2px;
+    }
+
+    .BannerTitle :last-child {
+        font-size: 12px !important;
+    }
+
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 327px;
+        padding-top: 60px;
+    }
+
+    /* projectImages */
+    .projectImages div:nth-child(1),
+    .projectImages div:nth-child(4){
+        width: 100%;
+        height: 430px;
+        margin-bottom: 20px;
+    }
+    
+    .projectImages div:nth-child(2),
+    .projectImages div:nth-child(3){
+        width: 49%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 327px;
+        padding-top: 120px;
+    }
+
+    .projectInfoIcno {
+        width: 44px;
+    }
+
+    .projectInfoDes {
+        margin-bottom: 20px;
+    }
+
+    .projectInfoDes,
+    .projectInfoBox {
+        width: 90%;
+        min-height: 290px;
+    }
+
+    .projectInfoTitles {
+        padding: 18px 14px 0px;
+        font-size: 20px !important;
+    }
+
+    .projectInfoDesText {
+        padding: 18px 14px 10px;
+        font-size: 18px !important;
+        line-height: 36px !important;
+    }
+
+    .projectInfoBoxItem {
+        margin-bottom: 6px;
+    }
+
+    .projectInfoBoxText {
+        padding: 12px 14px 0px;
+        font-size: 17px !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 330px;
+        padding-top: 120px;
+    }
+
+    /* projectImages */
+    .projectImages div:nth-child(1),
+    .projectImages div:nth-child(4){
+        width: 100%;
+        height: 400px;
+    }
+    
+    .projectImages div:nth-child(2),
+    .projectImages div:nth-child(3){
+        width: 48.7%;
+        height: 310px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Banner */
+
+    .Banner {
+        height: 380px;
+    }
+
+    .BannerTitle :first-child {
+        font-size: 47px !important;
+        margin-bottom: 0px;
+    }
+
+    .BannerTitle :last-child {
+        font-size: 11px !important;
+    }
+
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 285px;
+        padding-top: 100px;
+    }
+
+    .projectInfoIcno {
+        width: 39px;
+    }
+
+    .projectInfoDes {
+        margin-bottom: 20px;
+    }
+
+    .projectInfoDes,
+    .projectInfoBox {
+        width: 90%;
+        min-height: 310px;
+    }
+
+    .projectInfoTitles {
+        padding: 16px 13px 0px;
+        font-size: 19px !important;
+    }
+
+    .projectInfoDesText {
+        padding: 17px 13px 10px;
+        font-size: 18px !important;
+        line-height: 34px !important;
+    }
+
+    .projectInfoBoxItem {
+        margin-bottom: 6px;
+    }
+
+    .projectInfoBoxText {
+        padding: 13px 13px 0px;
+        font-size: 16px !important;
+    }
+
+    /* projectImages */
+    .projectImages div{
+        width: 100% !important;
+        height: 350px !important;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    /* projectImages */
+    .projectImages{
+        margin: 60px 0px 60px;
+    }
+
+    .projectImages div{
+        height: 300px !important;
+    }
+    
+    /* nextProject */
+    .nextProjectButton{
+        width: 210px;
+        height: 80px;
+        border-radius: 20px;
+        margin-bottom: 110px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    /* Banner */
+
+    .Banner {
+        height: 340px;
+    }
+
+    .BannerTitle :first-child {
+        font-size: 45px !important;
+    }
+
+    .BannerTitle :last-child {
+        font-size: 10px !important;
+    }
+
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 245px;
+        padding-top: 100px;
+    }
+
+    /* projectImages */
+    .projectImages div{
+        height: 270px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Banner */
+
+    .Banner {
+        height: 320px;
+    }
+
+    .BannerTitle :first-child {
+        font-size: 40px !important;
+    }
+
+    .BannerTitle :last-child {
+        font-size: 9px !important;
+    }
+
+
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 241px;
+        padding-top: 90px;
+    }
+
+    .projectInfoIcno {
+        width: 35px;
+    }
+
+    .projectInfoDes {
+        margin-bottom: 15px;
+    }
+
+    .projectInfoDes,
+    .projectInfoBox {
+        width: 95%;
+        min-height: 310px;
+    }
+
+    .projectInfoTitles {
+        padding: 15px 12px 0px;
+        font-size: 18px !important;
+    }
+
+    .projectInfoDesText {
+        padding: 16px 12px 10px;
+        font-size: 17px !important;
+        line-height: 32px !important;
+    }
+
+    .projectInfoBoxItem {
+        margin-bottom: 5px;
+    }
+
+    .projectInfoBoxText {
+        padding: 13px 12px 0px;
+        font-size: 15px !important;
+    }
+
+    /* projectImages */
+    .projectImages div{
+        height: 250px !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    /* Banner */
+
+    .Banner {
+        height: 300px;
+    }
+
+    .BannerTitle :first-child {
+        font-size: 34px !important;
+    }
+
+    .BannerTitle :last-child {
+        font-size: 8px !important;
+    }
+
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 221px;
+        padding-top: 90px;
+    }
+
+    .projectInfoIcno {
+        width: 35px;
+    }
+
+    .projectInfoDes {
+        margin-bottom: 15px;
+    }
+
+    .projectInfoDes,
+    .projectInfoBox {
+        width: 100%;
+        min-height: 310px;
+    }
+
+    .projectInfoTitles {
+        padding: 14px 11px 0px;
+        font-size: 17px !important;
+    }
+
+    .projectInfoDesText {
+        padding: 15px 11px 10px;
+        font-size: 16px !important;
+        line-height: 29px !important;
+    }
+
+    .projectInfoBoxItem {
+        margin-bottom: 4px;
+    }
+
+    .projectInfoBoxText {
+        padding: 10px 11px 0px;
+        font-size: 15px !important;
+    }
+
+    /* projectImages */
+    .projectImages div{
+        height: 230px !important;
+    }
+        
+    /* nextProject */
+    .nextProjectButton{
+        width: 200px;
+        height: 75px;
+        margin-bottom: 100px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    /* Banner */
+
+    .Banner {
+        height: 290px;
+    }
+
+    .BannerTitle :first-child {
+        font-size: 30px !important;
+    }
+
+    .BannerTitle :last-child {
+        font-size: 7px !important;
+    }
+
+    /* projectInfo */
+    .projectInfo {
+        margin-top: 211px;
+        padding-top: 90px;
+    }
+    
+    /* projectImages */
+    .projectImages div{
+        height: 200px !important;
+    }
+}
