@@ -1,0 +1,136 @@
+.notFound{
+    flex-flow: column;
+}
+
+.notFoundTitle{
+    font-size: 180px !important;
+    font-weight: bolder !important;
+    background: -webkit-linear-gradient(90deg, #3c58e3 -15%, #a5b9fa 58%, #5ab5e2 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.notFoundSubTitle{
+    font-size: 70px !important;
+    font-weight: bolder !important;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.notFoundCaption{
+    margin-top: 20px !important;
+    font-size: 15px !important;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.notFoundButton{
+    position: relative;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 35px;
+    letter-spacing: 0.4px;
+}
+
+@media screen and (max-width: 850px) {
+    .notFoundTitle{
+        font-size: 150px !important;
+    }
+    
+    .notFoundSubTitle{
+        font-size: 60px !important;
+    }
+    
+    .notFoundCaption{
+        margin-top: 19px !important;
+        font-size: 15px !important;
+    }
+    
+    .notFoundButton{
+        font-size: 15px;
+        width: 130px;
+        height: 45px;
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .notFound{
+        margin-bottom: 70px;
+    }
+
+    .notFoundTitle{
+        font-size: 140px !important;
+    }
+    
+    .notFoundSubTitle{
+        font-size: 50px !important;
+    }
+    
+    .notFoundCaption{
+        margin-top: 17px !important;
+        font-size: 13px !important;
+    }
+    
+    .notFoundButton{
+        font-size: 14px;
+        width: 120px;
+        height: 40px;
+        margin-top: 28px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .notFound{
+        margin-bottom: 90px;
+    }
+
+    .notFoundTitle{
+        font-size: 130px !important;
+    }
+    
+    .notFoundSubTitle{
+        font-size: 40px !important;
+    }
+    
+    .notFoundCaption{
+        margin-top: 15px !important;
+        font-size: 12px !important;
+    }
+    
+    .notFoundButton{
+        font-size: 13px;
+        width: 110px;
+        height: 38px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .notFound{
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    .notFoundTitle{
+        font-size: 120px !important;
+    }
+    
+    .notFoundSubTitle{
+        font-size: 30px !important;
+    }
+    
+    .notFoundCaption{
+        margin-top: 21px !important;
+        font-size: 13px !important;
+    }
+    
+    .notFoundButton{
+        font-size: 14px;
+        width: 120px;
+        height: 42px;
+        margin-top: 25px;
+    }
+}
