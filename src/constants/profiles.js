@@ -21,12 +21,12 @@ export const profiles = [
         darkIcno: <Icon20/>
     },
     {
-        path: "whatsapp://send?abid=+989026054699&amp;amp;text=Hello%2C%20World!",
+        path: "https://github.com/mhhm-100",
         lightIcon: <Icon17/>,
         darkIcno: <Icon21/>
     },
     {
-        path: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
+        path: "https://www.linkedin.com/in/mhhmohammadi",
         lightIcon: <Icon18/>,
         darkIcno: <Icon22/>
     }
