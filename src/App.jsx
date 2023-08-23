@@ -16,7 +16,7 @@ import {
   Projects,
   Services,
   Skills,
-  NotFound,
+  NotFound
 } from "./pages"
 import Header from './layouts/header/Header';
 import Footer from './layouts/footer/Footer';
