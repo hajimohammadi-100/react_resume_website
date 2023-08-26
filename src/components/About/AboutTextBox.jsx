@@ -5,7 +5,7 @@ import { Box, Link, Typography } from '@mui/material';
 import { styleBoxs } from "../../constants/styleBoxs";
 import style from "../../assets/styles/style.module.css";
 import { Icon2, Icon1 } from "../../assets/icons";
-import { ResumePdf } from '../../assets/pdf';
+import ResumePdf from "../../assets/pdf/index.pdf"
 
 const AboutTextBox = () => {
     const theme = useTheme();
@@ -25,8 +25,8 @@ const AboutTextBox = () => {
             <Typography className='aboutTextCaption' sx={{ color: theme.palette.textColor }}>
                 {
                     language === "Pe" ?
-                        "محمد حسین حاجی محمدی هستم برنامه نویس فرانت و طراح رابط کاربری حدود سه سال به صورت حرفه ای در این زمینه مشغول به کارم و همیشه سیع داشتم که بهترین نتیجه و کیفیت رو در اختیار مشتریان بذارم امید وارم که بتونیم در کنار هم به بهترین دست آورد ها برسیم ممنون که رزومه من رو انتخاب کردید" :
-                        "I am Mohammad Hossein Haji Mohammadi, a front-end programmer and user interface designer. I have been working professionally in this field for about three years, and I always try to provide the best results and quality to customers. I hope that we can work together to I got the best. Thank you for choosing my resume"
+                        "من محمدحسین حاجی محمدی هستم و سه سال سابقه برنامه نویسی فرانت اند رو به صورت جدی دارم. من همچنین تجربه زیادی در طراحی وب سایت های واکنش گرا و سازگار با موبایل دارم. علاوه بر این، من دارای مهارت های حل مسئله ، کار تیمی و مدیریت زمان هستم. هدف من در زمینه طراحی و توسعه وبسایت و ارائه راهکارهای نوآورانه برای بهبود عملکرد وب سایت ها و اراعه بهترین نتیجه و کیفیت به مشتریانم امید وارم در کنار هم به بهترین دست آورد ها برسیم ممنون که رزومه من رو انتخاب کردید." :
+                        "I am Mohammad Hossein Haji Mohammadi and I have three years of serious experience in front-end programming. I also have extensive experience in designing responsive and mobile-friendly websites. Additionally, I possess problem-solving skills, teamwork abilities, and time management skills. My goal is to design and develop websites and provide innovative solutions to improve website performance. I hope that together we can achieve the best results and quality for our clients. Thank you for considering my resume."
                 }
             </Typography>
             <Box

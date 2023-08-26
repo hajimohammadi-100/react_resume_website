@@ -30,7 +30,7 @@
 .skillTitle {
     position: absolute;
     text-align: center;
-    white-space: pre-wrap;
+    white-space: nowrap;
     font-size: 19px !important;
     top: -25px;
     left: 50%;
