@@ -61,8 +61,8 @@ const AvatarInfoBox = () => {
                     }}>
                     {
                         language === "Pe" ?
-                            "محمد حسین حاجی محمدی هستم برنامه نویس فرانت و طراح وبسایت" :
-                            "I front programmer and website designer"
+                            "محمد حسین حاجی محمدی هستم برنامه نویس فرانت اند و طراح وبسایت" :
+                            "I front-end programmer and website designer"
                     }
                 </Typography>
             </Box>
