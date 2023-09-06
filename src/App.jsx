@@ -29,8 +29,7 @@ function App() {
   const [language, setLanguage] = useState("Pe");
   const location = useLocation();
   const theme = isDarkMode ? lightTheme : darkTheme;
-  const matches = useMediaQuery('(max-width:750px)');
-  const matchesHomePage = useMediaQuery('(max-width:830px)');
+  const matches = useMediaQuery('(max-width:830px)');
 
   useEffect(() => {
     const boxes = document.querySelectorAll(".box");
@@ -46,7 +45,7 @@ function App() {
     const boxes = document.querySelectorAll(".box");
     window.addEventListener("scroll", () => { showBox(boxes) });
     showBox(boxes);
-  }, [isDarkMode, language, location , matches, matchesHomePage])
+  }, [isDarkMode, language, location , matches])
 
   return (
     <ThemeProvider theme={theme}>
@@ -61,7 +60,6 @@ function App() {
           matches,
           setAccordion,
           accordion,
-          matchesHomePage,
           setMenuStatus,
           menuStatus
         }}>

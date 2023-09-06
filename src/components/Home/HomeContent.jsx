@@ -13,7 +13,7 @@ import {
     ContactBox
 } from "./";
 const HomeContent = () => {
-    const { language, matchesHomePage } = useContext(themeContext);
+    const { language, matches } = useContext(themeContext);
 
     return (
         <>
@@ -32,7 +32,7 @@ const HomeContent = () => {
                 <SkillsBox />
 
                 {
-                    matchesHomePage ?
+                    matches ?
                         (
                             <>
                                 <ProfilesBox />

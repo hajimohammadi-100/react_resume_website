@@ -8,7 +8,6 @@ export const themeContext = createContext({
     activeMenu: false,
     setActiveMenu: () => { },
     matches: () => { },
-    matchesHomePage: () => { },
     setAccordion: () => { },
     accordion: false,
     menuStatus: "defult",
