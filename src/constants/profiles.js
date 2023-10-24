@@ -26,7 +26,7 @@ export const profiles = [
         darkIcno: <Icon19/>
     },
     {
-        path: "https://t.me/hajimohammadi",
+        path: "https://t.me/mhhmohammadi0",
         lightIcon: <Icon16/>,
         darkIcno: <Icon20/>
     }

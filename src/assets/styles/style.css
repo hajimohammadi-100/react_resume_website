@@ -96,3 +96,15 @@ a {
     opacity: 1;
     transform: translateX(0%);
 }
+
+/* poap */
+
+.poap{
+    text-align: right;
+    direction: rtl;
+}
+
+.Toastify__toast-theme--dark {
+    background: linear-gradient(135deg, #181818 0%, #101010 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}

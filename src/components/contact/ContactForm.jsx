@@ -6,6 +6,8 @@ import { useContext } from "react";
 import { themeContext } from "../../context/themeContext";
 import { fromValues } from "../../constants/fromValues";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 
 const ContactForm = () => {
     const theme = useTheme();
@@ -32,6 +34,11 @@ const ContactForm = () => {
             fromValues.push(value);
             navigate("/");
             resetForm({ values: '' });
+            toast.info("لطفا از راه های ارتباطی دیگر استفاده کنید به جای فرم تماس",
+                {
+                    className: "poap",
+                    theme: isDarkMode ? "dark" : "light"
+                });
         },
         validationSchema: contactValidation
     })

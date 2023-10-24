@@ -1,87 +1,79 @@
 export const skills = [
     {
         skill:"Ui/Ux",
-        skillNum: "95"
+        skillNum: "90"
     },
     {
         skill:"Css",
-        skillNum: "95"
+        skillNum: "90"
     },
     {
         skill:"Html",
-        skillNum: "95"
+        skillNum: "90"
     },
     {
         skill:"FlexBox",
-        skillNum: "95"
-    },
-    {
-        skill:"Sass",
-        skillNum: "94"
+        skillNum: "90"
     },
     {
         skill:"Responsive",
-        skillNum: "93"
-    },
-    {
-        skill:"Figmag",
-        skillNum: "92"
-    },
-    {
-        skill:"JavaScript",
         skillNum: "90"
     },
     {
-        skill:"Jquery",
-        skillNum: "90"
-    },
-    {
-        skill:"Aos",
-        skillNum: "90"
-    },
-    {
-        skill:"Less",
-        skillNum: "87"
-    },
-    {
-        skill:"Elementor",
-        skillNum: "87"
-    },
-    {
-        skill:"MaterialUI",
+        skill:"Sass",
         skillNum: "86"
     },
     {
-        skill:"React",
-        skillNum: "85"
+        skill:"Jquery",
+        skillNum: "83"
     },
     {
-        skill:"WordPress",
-        skillNum: "85"
-    },
-    {
-        skill:"Bootstrap",
+        skill:"Figmag",
         skillNum: "82"
     },
     {
-        skill:"RestfulAPI",
+        skill:"JavaScript",
         skillNum: "80"
     },
     {
-        skill:"Tailwind",
-        skillNum: "77"
+        skill:"MaterialUI",
+        skillNum: "80"
     },
     {
-        skill:"AdobeXd",
+        skill:"WordPress",
+        skillNum: "80"
+    },
+    {
+        skill:"Bootstrap",
+        skillNum: "80"
+    },
+    {
+        skill:"Less",
+        skillNum: "79"
+    },
+    {
+        skill:"Elementor",
+        skillNum: "78"
+    },
+    {
+        skill:"Tailwind",
+        skillNum: "78"
+    },
+    {
+        skill:"React",
         skillNum: "75"
+    },
+    {
+        skill:"RestfulAPI",
+        skillNum: "73"
     },
     {
         skill:"Git",
         skillNum: "70"
     },
     {
-        skill:"Pwa",
-        skillNum: "60"
+        skill:"Redux",
+        skillNum: "70"
     },
     {
         skill:"Ionic",
