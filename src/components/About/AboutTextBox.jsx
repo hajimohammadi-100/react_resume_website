@@ -25,8 +25,8 @@ const AboutTextBox = () => {
             <Typography className='aboutTextCaption' sx={{ color: theme.palette.textColor }}>
                 {
                     language === "Pe" ?
-                        "محمدحسین حاجی محمدی هستم و سابقه برنامه نویسی فرانت اند و طراحی وبسایت رو به صورت حرفه‌ای دارم. من همچنین تجربه طراحی وب سایت های واکنش گرا و سازگار با موبایل دارم و می توانم با طراح های رابط کاربری ارتباط بهتری بر قرار کنم علاوه بر این، من علاقه به حل مسئله ، کار تیمی و یادگیری تکنولوژ های جدید رو دارم. هدف من در زمینه برنامه نویسی وبسایت ارائه راهکارهای نوآورانه برای بهبود عملکرد وب سایت ها می باشد. در حال حاضر به دنبال فرصت های شغلی جدید در زمینه برنامه نویسی فرانت اند هستم. برای اشنایی بشتر می تونید به وبسایت شخصی بند مراجعه کنید" :
-                        "I am Mohammad Hossain Hajimohammadi and I have professional experience in front-end programming. I also have experience in designing responsive and mobile-friendly websites and can collaborate effectively with UI designers. In addition, I have a passion for problem-solving, teamwork, and learning new technologies. My goal in web development is to provide innovative solutions to improve website performance.Thank you for considering my resume."
+                        "محمدحسین حاجی محمدی هستم و سابقه برنامه نویسی فرانت اند و طراحی وبسایت رو به صورت حرفه‌ای دارم. من همچنین تجربه طراحی وب سایت های واکنش گرا و سازگار با موبایل دارم و می توانم با طراح های رابط کاربری ارتباط بهتری بر قرار کنم علاوه بر این، من علاقه به حل مسئله ، کار تیمی و یادگیری تکنولوژ های جدید رو دارم. هدف من در زمینه برنامه نویسی وبسایت ارائه راهکارهای نوآورانه برای بهبود عملکرد وب سایت ها می باشد" :
+                        "I am Mohammad Hossain Hajimohammadi and I have professional experience in front-end programming. I also have experience designing responsive and mobile friendly websites and can communicate better with UI designers. In addition, I am interested in problem solving, teamwork and learning new technologies. My goal in the field of website programming is to provide innovative solutions to improve the performance of websites"
                 }
             </Typography>
             <Box

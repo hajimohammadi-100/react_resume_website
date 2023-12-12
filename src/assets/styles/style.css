@@ -87,6 +87,7 @@ a {
 }
 
 .box {
+    position: relative;
     transform: translateY(16%);
     opacity: 0;
     transition: all 1.5s ease;

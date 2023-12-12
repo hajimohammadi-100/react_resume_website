@@ -33,3 +33,5 @@ export { ReactComponent as  LogoLight } from "./LogoLight.svg";
 export { ReactComponent as  LogoDark } from "./LogoDark.svg";
 export { ReactComponent as  LampDark } from "./LampDark.svg";
 export { ReactComponent as  LampLight } from "./LampLight.svg";
+export { ReactComponent as  OpenDark } from "./OpenDark.svg";
+export { ReactComponent as  OpenLight } from "./OpenLight.svg";

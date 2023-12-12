@@ -8,14 +8,16 @@ const Project = () => {
         <>
             {
                 projectsData.map((project, index) => (
-                    <CustomBoxProject 
+                    <CustomBoxProject
                         key={index}
                         path={`/projects/project/${project.Id}`}
                         enTitle={project.enTitle}
                         enSubTitle={project.enRole}
                         peTitle={project.peTitle}
                         peSubTitle={project.peRole}
-                        boxClass={project.boxClass}>
+                        boxClass={project.boxClass}
+                        isShared={project.isShared}
+                        SharedPath={project.SharedPath}>
                         <Box component={'div'} className={`projectImg ${!project.boxClass && "imgSmall"} ${style.flex_around}`}>
                             <img src={project.images[0]} alt={project.enTitle} />
                         </Box>

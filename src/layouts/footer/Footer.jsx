@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { themeContext } from "../../context/themeContext.js";
 import { useTheme } from "@emotion/react";
 import FooterTabs from "./FooterTabs";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const { language, isDarkMode } = useContext(themeContext);
@@ -18,9 +19,11 @@ const Footer = () => {
             <Box
                 component={'div'}
                 className="footerLogo">
-                {
-                    isDarkMode ? <LogoDark /> : <LogoLight />
-                }
+                <Link to={"/"}>
+                    {
+                        isDarkMode ? <LogoDark /> : <LogoLight />
+                    }
+                </Link>
             </Box>
             <FooterTabs />
             <Typography

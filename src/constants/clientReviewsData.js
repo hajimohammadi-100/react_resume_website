@@ -7,7 +7,7 @@ export const comments = [
         enClientName: "Shahab Bakhtiari",
         nameAbbreviation: "ُSh",
         rate: 5,
-        peComment: "شهاب بختیاری هستم در چند پروژه مختلف با آقا حاجی محمدی همکاری داشتم و از این همکاری ها رضایت دارم",
+        peComment: "شهاب بختیاری هستم در چند پروژه مختلف با آقای حاجی محمدی همکاری داشتم و از این همکاری ها رضایت دارم",
         enComment: "My name is Shahab Bakhtiari. I collaborated with Mr. Haji Mohammadi in several different projects and I am satisfied with these collaborations"
     },
     {

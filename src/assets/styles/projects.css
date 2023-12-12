@@ -25,6 +25,15 @@
 }
 
 /* boxs */
+.SharedProject{
+    position: absolute;
+    width: 40px;
+    border-radius: 10px;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
 .Box_project_Big {
     position: relative;
     width: 63%;
@@ -78,8 +87,7 @@
     }
 }
 
-.Box_project_default a,
-.Box_project_Big a {
+.redirector{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -168,6 +176,13 @@
         font-size: 24px !important;
         letter-spacing: 1.3px;
     }
+
+    .SharedProject{
+        width: 35px;
+        border-radius: 8px;
+        top: 18px;
+        right: 17px;
+    }    
 }
 
 @media screen and (max-width: 950px) {
@@ -218,6 +233,12 @@
     .Box_project_title {
         font-size: 22px !important;
         letter-spacing: 1.3px;
+    }
+
+    .SharedProject{
+        width: 33px;
+        top: 14px;
+        right: 13px;
     }
 }
 
@@ -321,6 +342,13 @@
         font-size: 24px !important;
         letter-spacing: 1.3px;
     }
+    
+    .SharedProject{
+        width: 40px;
+        border-radius: 10px;
+        top: 20px;
+        right: 19px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -373,6 +401,13 @@
         font-size: 22px !important;
         letter-spacing: 1.3px;
     }
+        
+    .SharedProject{
+        width: 35px;
+        border-radius: 8px;
+        top: 13px;
+        right: 13px;
+    }
 }
 
 @media screen and (max-width: 370px) {
@@ -419,5 +454,11 @@
     .Box_project_title {
         font-size: 20px !important;
         letter-spacing: 1px;
+    }
+            
+    .SharedProject{
+        width: 32px;
+        top: 12px;
+        right: 12px;
     }
 }

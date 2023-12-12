@@ -1,6 +1,6 @@
 import style from "../../assets/styles/style.module.css";
 import { styleBoxs } from "../../constants/styleBoxs";
-import { Box, Chip, Typography } from "@mui/material";
+import { Box, Chip, Link, Typography } from "@mui/material";
 import { useContext } from "react";
 import { themeContext } from '../../context/themeContext';
 import { Icon1, Icon2 } from "../../assets/icons"
@@ -14,7 +14,7 @@ const ProjectInfo = ({ project }) => {
         <Box
             component={'div'}
             className={`projectInfo box ${style.flex_around} ${style.flex_flow}`} sx={{ direction: language === "Pe" && "rtl" }}>
-            {isDarkMode ? <Icon2 className="projectInfoIcno"/> : <Icon1 className="projectInfoIcno"/>}
+            {isDarkMode ? <Icon2 className="projectInfoIcno" /> : <Icon1 className="projectInfoIcno" />}
             <Box component={'div'} className="projectInfoDes" sx={styleBoxs(theme, language)}>
                 <Typography
                     className="projectInfoTitles"
@@ -33,6 +33,23 @@ const ProjectInfo = ({ project }) => {
                         language === "Pe" ? project.peDescription : project.enDescription
                     }
                 </Typography>
+                {
+                    project.isShared ?
+                        <Link
+                            className="projectInfoLink"
+                            href={project.SharedPath}
+                            target="_blank"
+                            sx={{
+                                backgroundColor: theme.palette.button,
+                                left: language === "Pe" && "10px",
+                                right: language !== "Pe" && "10px",
+                                color: "white",
+                            }}>
+                            {
+                                language === "Pe" ? "بازدید از پروژه" : "view project"
+                            }
+                        </Link> : null
+                }
             </Box>
             <Box
                 component={'div'}
@@ -92,9 +109,12 @@ const ProjectInfo = ({ project }) => {
                                     key={index}
                                     label={item}
                                     sx={{
-                                        backgroundColor: theme.palette.button,
+                                        borderColor: theme.palette.button,
+                                        borderStyle: "solid",
+                                        borderWidth: "1px",
                                         padding: "19px 5px",
-                                        color: "white",
+                                        color: theme.palette.tabColor,
+                                        fontWeight: "bold",
                                         mr: language !== "1px",
                                         ml: language === "1px",
                                         letterSpacing: "0.6px",

@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useContext } from "react";
 import { themeContext } from '../../context/themeContext';
+import { Link } from "react-router-dom";
 
 const ProjectBanner = ({project}) => {
     const { isDarkMode, language } = useContext(themeContext);
@@ -19,9 +20,9 @@ const ProjectBanner = ({project}) => {
                     style={{
                         opacity: isDarkMode ? "0.2" : "0.19"
                     }} />
-                <Box component={'div'} className="BannerTitle">
-                    <Typography>{language === "Pe" ? project.peTitle : project.enTitle}</Typography>
-                    <Typography>{language === "Pe" ? project.peRole : project.enRole}</Typography>
+                <Box component={'div'} className="BannerTexts">
+                    <Typography className="BannerTexts_Title">{language === "Pe" ? project.peTitle : project.enTitle}</Typography>
+                    <Typography className="BannerTexts_SubTitle">{language === "Pe" ? project.peRole : project.enRole}</Typography>
                 </Box>
             </Box>
         </Box>

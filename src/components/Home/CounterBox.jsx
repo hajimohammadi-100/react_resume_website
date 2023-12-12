@@ -26,7 +26,6 @@ const CounterBox = () => {
                             className="CounterBoxNum"
                             sx={{ color: theme.palette.titleColor }}>
                             +
-                            {index === 0 && 0}
                             <CountUp start={0} end={item.number} duration={item.duration} />
                         </Typography>
                         <Typography

@@ -1,12 +1,6 @@
 
 export const questionsData = [
     {
-        peTitle: "چرا وردپرس؟",
-        enTitle: "Why WordPress?",
-        peCaption: "وردپرس یکی از پر کاربرد ترین و آسان ترین CMS (سیستم مدیریت محتوا) های جهان است و در حال حاضر بیش از نیمی از سایت های دنیا با وردپرس ساخته شده اند. وردپرس یک سیستم تحت وب و متن باز است و توسط زبان برنامه نویسی PHP نوشته شده است که به پایگاه داده MySql متصل می‌شود.",
-        enCaption: "WordPress is one of the most widely used and easiest CMS (content management system) in the world, and currently more than half of the sites in the world are built with WordPress. WordPress is an open source web based system written in PHP programming language that connects to MySql database."
-    },
-    {
         peTitle: "چرا به وب سایت نیاز دارم؟",
         enTitle: "Why do I need a website?",
         peCaption: "تاثیرات وب و اینترنت بر کسی پوشیده نیست امروزه همه کارا اینترنتی شده چون کسی حوصله نداره و یا بخاطر ترافیک و یا کمبود وقت نمیرسن خیلی کارهارو انجام بدن و براشون بصرفه تره این کارارو اینترنتی انجام بدن حالا تو این عرصه کسی موفق تره که زودتر اقدام کنه الان تعریف مردم از رفاه فرق کرده و رفا رو توی دسترسی اسون تر و سریعتر می بینند",
@@ -15,8 +9,14 @@ export const questionsData = [
     {
         peTitle: "سایت چند روزه آماده می شود؟",
         enTitle: "How many days will the site be ready?",
-        peCaption: "مدت زمان طراحی سایت بستگی به امکانات و ویژگی های مد نظر شما دارد. اما در کل با توجه به اینکه وب پویا از سایت های آماده برای راه اندازی سایت استفاده می کنند، مدت زمان راه اندازی سایت در حدود ۳ روز کاری است ولی اگر وبسایت درخواستی شما وردپرس نباشد و نیاز به برنامه نویسی داشته باشه مدت زمان بیشتری نیاز هست",
-        enCaption: "The duration of website design depends on the facilities and features you want. But in general, due to the fact that the dynamic web uses ready-made sites to launch the site, the time to launch the site is about 3 working days, but if your requested website is not WordPress and requires programming, it will take more time. LT is"
+        peCaption: "روند طراحی سایت معمولا 8 تا 12 روز کاری تا زمان میره و زمانی از جایی محاسبه میشه که هاست دامین شما باهم ست شده باشن که زمانی بین 24  تا 72 ساعت طول میکشه، ما این مقدار زمان رو میگیم میانگین اگه زودتر آماده شه سایت رو تحویلتون میدیم ولی اون تایمو میگیم که دیر و زود نشه و پیش شما بدقول نشیم این مقدار برای یه سایت روتینه ممکنه سایت شما پیچیده تر باشه زمان بیشتری ببره.", 
+        enCaption: "The usual website design process takes 8 to 12 working days, and the time is calculated from the time when your domain is hosted, which takes between 24 and 72 hours. . We will give, but we will tell you the time so that it is not too late and it is rude to express this amount for a routine site, your site may be more complicated and take more time."
+    },
+    {
+        peTitle: "امکان مشاوره رایگان وجود دارد؟",
+        enTitle: "Is it possible to have a free consultation?",
+        peCaption: ".بله بنده همه روزه بجز ایام تعطیل آماده پاسخگویی به سوالات شما از طریق تماس تلفنی بین ساعت های 14  تا 20 هستم همچنین شما می توانید توی تمام شبکه های مجازی بامن در ارتباط باشد",
+        enCaption: "Yes, I am ready to answer your questions every day except holidays by phone between 14:00 and 20:00. You can also contact me on all virtual networks."
     },
     {
         peTitle: "آیا همه هزینه طراحی باید اول پرداخت شود؟",

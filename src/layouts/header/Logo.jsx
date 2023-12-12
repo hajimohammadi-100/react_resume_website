@@ -2,6 +2,7 @@ import { LogoLight, LogoDark } from "../../assets/icons";
 import { Box } from "@mui/material";
 import { useContext } from "react";
 import { themeContext } from "../../context/themeContext.js";
+import { Link } from "react-router-dom";
 
 const Logo = () => {
     const { language, isDarkMode } = useContext(themeContext);
@@ -10,9 +11,11 @@ const Logo = () => {
         <Box
             component={'div'}
             className={language === "Pe" ? "logoHeaderLtr" : "logoHeaderRtl"}>
-            {
-                isDarkMode ? <LogoDark/> : <LogoLight/>
-            }
+            <Link to={"/"}>
+                {
+                    isDarkMode ? <LogoDark /> : <LogoLight />
+                }
+            </Link>
         </Box>
     )
 }

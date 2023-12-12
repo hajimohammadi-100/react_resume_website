@@ -38,6 +38,8 @@ const projectsData = [
         enDescription: "The Bluer Music website features responsive design for all mobile, tablet, and computer modes. This website allows users to play music and videos online. Due to proper coding, this website operates very quickly and provides a highly enjoyable user experience.",
         peDate: "30 فروردین 1402",
         enDate: "APRIL 20, 2023",
+        SharedPath:"https://blurmusic.mhhmohammadi.ir/",
+        isShared: true,
         items: ["Html 5", "Jquery", "Javascript", "Css 3", "Sass"]
     },
     {
@@ -51,6 +53,8 @@ const projectsData = [
         enDescription: "The Glasses Market website offers the sale of glasses and eyewear accessories. It provides online chat functionality and responsiveness for all modes, including mobile, tablet, and computer. With its beautiful and modern design, this website offers a unique experience for visitors.",
         peDate: "20 تیر 1401",
         enDate: "JULY 11, 2022",
+        SharedPath:"https://eynakmarket.mhhmohammadi.ir/",
+        isShared: true,
         items: ["Html 5", "Jquery", "Javascript", "Css 3"]
     },
     {
@@ -64,6 +68,8 @@ const projectsData = [
         enDescription: "My mechanic is a professional website in the field of car repairs. This website allows customers to connect with professional mechanics and receive services and special discounts.",
         peDate: "28 آبان 1400",
         enDate: "NOVEMBER 19, 2021",
+        SharedPath:"",
+        isShared: false,
         items: ["WordPress", "Elementor"]
     },
     {
@@ -78,6 +84,8 @@ const projectsData = [
         enDescription: "A personal jewelry design website provides a unique experience for visitors and allows users to view and purchase unique and handmade jewelry. Also, this website has features such as online chat and being multilingual.",
         peDate: "3 اسفند 1401",
         enDate: "FEBRUARY 22, 2023",
+        SharedPath:"https://jewelrywebsite.mhhmohammadi.ir/",
+        isShared: true,
         items: ["Html 5", "Jquery", "Javascript", "Css 3"]
     },
     {
@@ -92,6 +100,8 @@ const projectsData = [
         enDescription: "Fitness Club is a professional fitness website with a modern design and simple user interface, providing a unique experience for its users. The website of the fitness club uses the latest web design technologies and provides fast loading and a better user experience for users.",
         peDate: "14 اردیبهشت 1401",
         enDate: "MAY 4, 2022",
+        SharedPath:"",
+        isShared: false,
         items: ["WordPress", "Elementor"]
     },
     {
@@ -105,6 +115,8 @@ const projectsData = [
         enDescription: "The Got Food website allows users to order food online and features online chat and responsiveness for all mobile, tablet, and computer modes. This website operates at a high speed due to proper coding and provides users with the ability to order food online.",
         peDate: "7 شهریور 1400",
         enDate: "AUGUST 29, 2021",
+        SharedPath:"",
+        isShared: false,
         items: ["Html 5", "Bootstrap", "Javascript", "Css 3"]
     }
 ]

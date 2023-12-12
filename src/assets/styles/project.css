@@ -34,7 +34,7 @@
     z-index: -1;
 }
 
-.BannerTitle {
+.BannerTexts {
     position: absolute;
     text-align: center;
     top: 50%;
@@ -43,7 +43,7 @@
     z-index: 1;
 }
 
-.BannerTitle :first-child {
+.BannerTexts_Title {
     font-size: 60px !important;
     font-weight: bold !important;
     letter-spacing: 1px;
@@ -52,7 +52,7 @@
     white-space: nowrap;
 }
 
-.BannerTitle :last-child {
+.BannerTexts_SubTitle {
     font-size: 14px !important;
     font-weight: bold !important;
     letter-spacing: 1px;
@@ -78,6 +78,7 @@
 
 .projectInfoDes,
 .projectInfoBox {
+    position: relative;
     width: 500px;
     min-height: 310px;
     border-radius: 20px;
@@ -96,6 +97,17 @@
     font-size: 17px !important;
     line-height: 35px !important;
     letter-spacing: 0.4px;
+}
+
+.projectInfoLink{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 45px;
+    border-radius: 10px;
+    bottom: 10px;
 }
 
 .projectInfoBoxItem {
@@ -276,12 +288,12 @@
         height: 485px;
     }
 
-    .BannerTitle :first-child {
+    .BannerTexts_Title {
         font-size: 54px !important;
         margin-bottom: 3px;
     }
 
-    .BannerTitle :last-child {
+    .BannerTexts_SubTitle {
         font-size: 13px !important;
     }
 
@@ -297,8 +309,8 @@
 
     .projectInfoDes,
     .projectInfoBox {
-        width: 360px;
-        min-height: 310px;
+        width: 390px;
+        min-height: 320px;
     }
 
     .projectInfoTitles {
@@ -310,6 +322,13 @@
         padding: 20px 13px 10px;
         font-size: 17px !important;
         line-height: 33px !important;
+    }
+
+    .projectInfoLink{
+        font-size: 15px !important;
+        width: 110px;
+        height: 40px;
+        border-radius: 8px;
     }
 
     .projectInfoBoxItem {
@@ -349,8 +368,15 @@
 
     .projectInfoDes,
     .projectInfoBox {
-        width: 320px;
+        width: 355px;
         min-height: 310px;
+    }
+
+    .projectInfoLink{
+        font-size: 15px !important;
+        width: 110px;
+        height: 40px;
+        border-radius: 8px;
     }
 
     .projectInfoTitles {
@@ -390,12 +416,12 @@
         height: 425px;
     }
 
-    .BannerTitle :first-child {
+    .BannerTexts_Title {
         font-size: 52px !important;
         margin-bottom: 2px;
     }
 
-    .BannerTitle :last-child {
+    .BannerTexts_SubTitle {
         font-size: 12px !important;
     }
 
@@ -453,6 +479,13 @@
         line-height: 36px !important;
     }
 
+    .projectInfoLink{
+        font-size: 16px !important;
+        width: 120px;
+        height: 45px;
+        border-radius: 8px;
+    }
+
     .projectInfoBoxItem {
         margin-bottom: 6px;
     }
@@ -491,12 +524,12 @@
         height: 380px;
     }
 
-    .BannerTitle :first-child {
+    .BannerTexts_Title {
         font-size: 47px !important;
         margin-bottom: 0px;
     }
 
-    .BannerTitle :last-child {
+    .BannerTexts_SubTitle {
         font-size: 11px !important;
     }
 
@@ -517,7 +550,7 @@
     .projectInfoDes,
     .projectInfoBox {
         width: 90%;
-        min-height: 310px;
+        min-height: 320px;
     }
 
     .projectInfoTitles {
@@ -574,12 +607,26 @@
         height: 340px;
     }
 
-    .BannerTitle :first-child {
+    .BannerTexts_Title {
         font-size: 45px !important;
     }
 
-    .BannerTitle :last-child {
+    .BannerTexts_SubTitle {
         font-size: 10px !important;
+    }
+
+    /* projectInfo */
+
+    .projectInfoDes,
+    .projectInfoBox {
+        width: 94%;
+        min-height: 330px;
+    }
+    
+    .projectInfoLink{
+        font-size: 15px !important;
+        width: 110px;
+        height: 40px;
     }
 
     /* projectInfo */
@@ -601,14 +648,13 @@
         height: 320px;
     }
 
-    .BannerTitle :first-child {
+    .BannerTexts_Title {
         font-size: 40px !important;
     }
 
-    .BannerTitle :last-child {
+    .BannerTexts_SubTitle {
         font-size: 9px !important;
     }
-
 
     /* projectInfo */
     .projectInfo {
@@ -626,8 +672,8 @@
 
     .projectInfoDes,
     .projectInfoBox {
-        width: 95%;
-        min-height: 310px;
+        width: 96%;
+        min-height: 315px;
     }
 
     .projectInfoTitles {
@@ -639,6 +685,12 @@
         padding: 16px 12px 10px;
         font-size: 17px !important;
         line-height: 32px !important;
+    }
+
+    .projectInfoLink{
+        font-size: 13px !important;
+        width: 100px;
+        height: 38px;
     }
 
     .projectInfoBoxItem {
@@ -663,11 +715,11 @@
         height: 300px;
     }
 
-    .BannerTitle :first-child {
+    .BannerTexts_Title {
         font-size: 34px !important;
     }
 
-    .BannerTitle :last-child {
+    .BannerTexts_SubTitle {
         font-size: 8px !important;
     }
 
@@ -732,11 +784,11 @@
         height: 290px;
     }
 
-    .BannerTitle :first-child {
+    .BannerTexts_Title {
         font-size: 30px !important;
     }
 
-    .BannerTitle :last-child {
+    .BannerTexts_SubTitle {
         font-size: 7px !important;
     }
 
@@ -745,9 +797,22 @@
         margin-top: 211px;
         padding-top: 90px;
     }
+
+    .projectInfoDes,
+    .projectInfoBox {
+        width: 100%;
+        min-height: 320px;
+    }
+
+    .projectInfoLink{
+        font-size: 15px !important;
+        width: 110px;
+        height: 40px;
+    }
     
     /* projectImages */
     .projectImages div{
         height: 200px !important;
     }
+
 }

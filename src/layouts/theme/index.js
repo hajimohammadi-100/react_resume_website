@@ -38,7 +38,7 @@ export const darkTheme = createTheme({
         boxBackground: "linear-gradient(135deg, #FFF 0%, #CACACA 100%)",
         titleColor: "#333",
         boderColor: "rgba(255, 255, 255, 0.10)",
-        textColor: "#9F9F9F",
+        textColor: "#797979",
         textColor2: "#BCBCBC",
         tabColor: "rgb(107, 107, 107)",
         backgroundMenu: "linear-gradient(180deg, rgba(11,71,138,1) 0%, rgba(174,174,174,1) 72%, rgba(239,239,239,1) 100%)",

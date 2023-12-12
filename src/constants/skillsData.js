@@ -1,82 +1,82 @@
 export const skills = [
     {
-        skill:"Ui/Ux",
+        skill: "Css",
         skillNum: "90"
     },
     {
-        skill:"Css",
+        skill: "Html",
         skillNum: "90"
     },
     {
-        skill:"Html",
+        skill: "FlexBox",
         skillNum: "90"
     },
     {
-        skill:"FlexBox",
+        skill: "Responsive",
         skillNum: "90"
     },
     {
-        skill:"Responsive",
-        skillNum: "90"
+        skill: "Sass",
+        skillNum: "88"
     },
     {
-        skill:"Sass",
-        skillNum: "86"
+        skill: "Jquery",
+        skillNum: "85"
     },
     {
-        skill:"Jquery",
+        skill: "JavaScript",
         skillNum: "83"
     },
     {
-        skill:"Figmag",
+        skill: "React",
         skillNum: "82"
     },
     {
-        skill:"JavaScript",
+        skill: "Ui/Ux",
         skillNum: "80"
     },
     {
-        skill:"MaterialUI",
+        skill: "MaterialUI",
         skillNum: "80"
     },
     {
-        skill:"WordPress",
+        skill: "WordPress",
         skillNum: "80"
     },
     {
-        skill:"Bootstrap",
+        skill: "Bootstrap",
         skillNum: "80"
     },
     {
-        skill:"Less",
-        skillNum: "79"
-    },
-    {
-        skill:"Elementor",
+        skill: "Elementor",
         skillNum: "78"
     },
     {
-        skill:"Tailwind",
-        skillNum: "78"
-    },
-    {
-        skill:"React",
+        skill: "Figmag",
         skillNum: "75"
     },
     {
-        skill:"RestfulAPI",
+        skill: "RestApi",
         skillNum: "73"
     },
     {
-        skill:"Git",
+        skill: "Git",
         skillNum: "70"
     },
     {
-        skill:"Redux",
+        skill: "Tailwind",
         skillNum: "70"
     },
     {
-        skill:"Ionic",
-        skillNum: "60"
+        skill: "Less",
+        skillNum: "70"
+    },
+    {
+        skill: "Redux",
+        skillNum: "65"
+    },
+    {
+        skill: "Next",
+        skillNum: "50"
     }
 ]
