@@ -22,11 +22,17 @@ import Header from './layouts/header/Header';
 import Footer from './layouts/footer/Footer';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    // Check if there is a value stored in localStorage
+    return localStorage.getItem('myTheme') === 'true';
+  });
+  const [language, setLanguage] = useState(() => {
+    // Check if there is a value stored in localStorage
+    return localStorage.getItem('language') || 'En';
+  });
   const [activeMenu, setActiveMenu] = useState(false);
   const [menuStatus, setMenuStatus] = useState("defult");
   const [accordion, setAccordion] = useState(false);
-  const [language, setLanguage] = useState("Pe");
   const location = useLocation();
   const theme = isDarkMode ? lightTheme : darkTheme;
   const matches = useMediaQuery('(max-width:830px)');
@@ -36,6 +42,14 @@ function App() {
     window.addEventListener("scroll", () => { showBox(boxes) });
     showBox(boxes);
   }, [])
+
+  useEffect(() => {
+    localStorage.setItem('myTheme', isDarkMode);
+  }, [isDarkMode]);
+
+  useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })

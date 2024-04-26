@@ -40,7 +40,7 @@ export const servicesIcons = [
         darkIcno: <Icon12/>,
         peTitle:"بهینه سازی وب",
         enTitle:"performance",
-        peDescription:"بهینه سازی وبسایت به این معنی هست که وبسایت به شکلی کدنویسی و طراحی شود که برای متور های جست و جوگر از جمله گوگل بهینه باشد و این موضوع باعث رشد بهتر وبسایت شما می شود",
+        peDescription:"بهینه سازی وبسایت به این معنی هست که وبسایت به شکلی کدنویسی و طراحی شود که برای موتور های جست و جوگر از جمله گوگل بهینه باشد و این موضوع باعث رشد بهتر وبسایت شما می شود",
         enDescription:"Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum."
     } 
 ]

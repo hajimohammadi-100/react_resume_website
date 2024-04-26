@@ -25,7 +25,7 @@ const AvatarInfoBox = () => {
                 <Avatar
                     variant="square"
                     src={avatar1}
-                    alt="mhhmohammadi_Picture"
+                    alt="Picture"
                     sx={{
                         width: 1,
                         height: 1,
