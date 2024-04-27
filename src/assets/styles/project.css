@@ -253,7 +253,7 @@
     }
 
     .projectInfoDesText {
-        padding: 17px 12px 10px;
+        padding: 17px 12px 60px;
         font-size: 16px !important;
         line-height: 30px !important;
     }
@@ -559,7 +559,7 @@
     }
 
     .projectInfoDesText {
-        padding: 17px 13px 10px;
+        padding: 17px 13px 60px;
         font-size: 18px !important;
         line-height: 34px !important;
     }
@@ -682,7 +682,7 @@
     }
 
     .projectInfoDesText {
-        padding: 16px 12px 10px;
+        padding: 16px 12px 55px;
         font-size: 17px !important;
         line-height: 32px !important;
     }
@@ -749,7 +749,7 @@
     }
 
     .projectInfoDesText {
-        padding: 15px 11px 10px;
+        padding: 15px 11px 55px;
         font-size: 16px !important;
         line-height: 29px !important;
     }
