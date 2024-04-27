@@ -4,10 +4,9 @@ import { Button, TextField } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import { useContext } from "react";
 import { themeContext } from "../../context/themeContext";
-import { fromValues } from "../../constants/fromValues";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-
+import { send } from "@emailjs/browser";
 
 const ContactForm = () => {
     const theme = useTheme();
@@ -31,14 +30,25 @@ const ContactForm = () => {
     const formik = useFormik({
         initialValues: contactInputName,
         onSubmit: (value, { resetForm }) => {
-            fromValues.push(value);
-            navigate("/");
-            resetForm({ values: '' });
-            toast.info("لطفا از راه های ارتباطی دیگر استفاده کنید به جای فرم تماس",
-                {
+            send("service_y0rs9mc", "template_re647fo", {
+                name: "",
+                fullname: value.fullname,
+                subject: value.subject,
+                email: value.email,
+                message: value.message,
+            }, "F3stt3i8SxZ-F7Pnj").then((result) => {
+                toast.success("ممنون از این که من رو انتخاب کردید", {
                     className: "poap",
                     theme: isDarkMode ? "dark" : "light"
                 });
+                navigate("/");
+                resetForm({ values: '' });
+            }).catch(() => {
+                toast.error("مشکلی پیش آمده لطفا از راه های ارتباطی دیگر استفاده کنید", {
+                    className: "poap",
+                    theme: isDarkMode ? "dark" : "light"
+                });
+            })
         },
         validationSchema: contactValidation
     })
@@ -55,45 +65,48 @@ const ContactForm = () => {
                 sx={{
                     mb: "10px",
                     ".MuiInputBase-input": {
-                        color: theme.palette.titleColor,
-                        fontWeight: !isDarkMode && "bold"
+                        color: `${theme.palette.titleColor} !important`,
+                        fontWeight: !isDarkMode && "bold !important"
                     },
                     "&:hover": {
-                        backgroundColor: "transparent",
+                        backgroundColor: "transparent !important",
                     },
                     ".MuiFormLabel-root,.css-1qjkqnl-MuiFormLabel-root-MuiInputLabel-root.Mui-error,.css-b3t34p-MuiFormLabel-root-MuiInputLabel-root.Mui-error": {
-                        color: theme.palette.textColor,
-                        letterSpacing: "0.4px",
-                        ml: language !== "Pe" && "-8px",
-                        left: language !== "Pe" && "0px",
-                        right: language === "Pe" && "17px"
+                        color: `${theme.palette.textColor} !important`,
+                        letterSpacing: "0.4px !important",
+                        ml: language !== "Pe" && "-8px !important",
+                        left: language !== "Pe" && "0px !important",
+                        right: language === "Pe" && "17px !important"
                     },
                     ".css-1jru9n7-MuiFormLabel-root-MuiInputLabel-root.Mui-focused": {
-                        color: theme.palette.titleColor
+                        color: `${theme.palette.titleColor} !important`
                     },
                     ".css-1wm2oz1-MuiFormLabel-root-MuiInputLabel-root.Mui-focused": {
-                        color: theme.palette.titleColor
+                        color: `${theme.palette.titleColor} !important`
                     },
                     ".css-1jru9n7-MuiFormLabel-root-MuiInputLabel-root": {
-                        transform: language === "Pe" && "translate(12px, 1px) scale(1)",
-                        fontSize: language === "Pe" && "11px",
-                        color: theme.palette.titleColor
+                        transform: language === "Pe" && "translate(12px, 1px) scale(1) !important",
+                        fontSize: language === "Pe" && "11px !important",
+                        color: `${theme.palette.titleColor} !important`
                     },
                     ".css-1wm2oz1-MuiFormLabel-root-MuiInputLabel-root": {
-                        transform: language === "Pe" && "translate(12px, 1px) scale(1)",
-                        fontSize: language === "Pe" && "11px",
-                        color: theme.palette.titleColor
+                        transform: language === "Pe" && "translate(12px, 1px) scale(1) !important",
+                        fontSize: language === "Pe" && "11px !important",
+                        color: `${theme.palette.titleColor} !important`
                     },
                     ".css-13swrpw-MuiInputBase-root-MuiFilledInput-root:after,.css-1yjxizd-MuiInputBase-root-MuiFilledInput-root:after": {
-                        borderBottom: `1px solid ${theme.palette.titleColor}`,
-                        opacity: "0.5"
+                        borderBottom: `1px solid ${theme.palette.titleColor} !important`,
+                        opacity: "0.5 !important"
+                    },
+                    ".css-1s8o99q::after": {
+                        borderBottom: `1px solid ${theme.palette.titleColor} !important`,
                     },
                     ".css-13swrpw-MuiInputBase-root-MuiFilledInput-root:before,.css-1yjxizd-MuiInputBase-root-MuiFilledInput-root:before": {
-                        borderBottom: `1px solid ${theme.palette.textColor}`,
-                        opacity: "0.5"
+                        borderBottom: `1px solid ${theme.palette.textColor} !important`,
+                        opacity: "0.5 !important"
                     },
                     ".MuiFormHelperText-root": {
-                        textAlign: language === "Pe" ? "right" : "left",
+                        textAlign: language === "Pe" ? "right !important" : "left !important",
                         mt: "4px",
                         mx: 0
                     }
