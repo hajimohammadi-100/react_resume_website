@@ -25,8 +25,8 @@ const AboutTextBox = () => {
             <Typography className='aboutTextCaption' sx={{ color: theme.palette.textColor }}>
                 {
                     language === "Pe" ?
-                        "محمدحسین حاجی محمدی هستم و سابقه برنامه نویسی فرانت اند و طراحی وبسایت رو به صورت حرفه‌ای دارم. من همچنین تجربه طراحی وب سایت های واکنش گرا و سازگار با موبایل دارم و می توانم با طراح های رابط کاربری ارتباط بهتری بر قرار کنم علاوه بر این، من علاقه به حل مسئله ، کار تیمی و یادگیری تکنولوژ های جدید رو دارم. هدف من در زمینه برنامه نویسی وبسایت ارائه راهکارهای نوآورانه برای بهبود عملکرد وب سایت ها می باشد" :
-                        "I am Mohammad Hossain Hajimohammadi and I have professional experience in front-end programming. I also have experience designing responsive and mobile friendly websites and can communicate better with UI designers. In addition, I am interested in problem solving, teamwork and learning new technologies. My goal in the field of website programming is to provide innovative solutions to improve the performance of websites"
+                        "محمدحسین حاجی محمدی هستم و سابقه برنامه نویسی فرانت رو به صورت حرفه‌ای دارم. من همچنین تجربه طراحی و برنامه نویسی وبسایت های واکنش گرا و سازگار با تمام نمایشگرها رو دارم علاوه بر این، من علاقه مند به حل مسئله ، کار تیمی و یادگیری تکنولوژ های جدید هستم. هدف من در زمینه برنامه نویسی فرانت اند ارائه راهکارهای نوآورانه برای بهبود عملکرد وب سایت ها و ساخت وبسایت های بی عیب و نقص هستش ممنون که رزومه من رو انتخاب کردید" :
+                        "My fullname is Mohammad Hossein Haji Mohammadi and I have a professional background in front end programming. I also have experience designing and programming responsive websites that are compatible with all screens. In addition, I am interested in problem solving, teamwork and learning new technologies. My goal in the field of front-end programming is to provide innovative solutions to improve the performance of websites and build flawless websites. Thank you for choosing my resume."
                 }
             </Typography>
             <Box

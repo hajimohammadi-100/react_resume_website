@@ -22,7 +22,7 @@ export const ContactInfoBoxData = [
         enTitle: "SERVICE",
         lightIcon: <Icon25 />,
         darkIcon: <Icon28 />,
-        peDiscription: "برنامه نویس فرانت و طراح وبسایت",
+        peDiscription: "برنامه نویس فرانت",
         enDiscription: "Front Developer And Design",
     },
 ]

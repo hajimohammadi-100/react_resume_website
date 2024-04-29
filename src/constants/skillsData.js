@@ -52,8 +52,16 @@ export const skills = [
         skillNum: "78"
     },
     {
+        skill: "Redux",
+        skillNum: "75"
+    },
+    {
         skill: "Figmag",
         skillNum: "75"
+    },
+    {
+        skill: "RTKQuery",
+        skillNum: "74"
     },
     {
         skill: "RestApi",
@@ -66,14 +74,6 @@ export const skills = [
     {
         skill: "Tailwind",
         skillNum: "70"
-    },
-    {
-        skill: "Less",
-        skillNum: "70"
-    },
-    {
-        skill: "Redux",
-        skillNum: "65"
     },
     {
         skill: "Next",
